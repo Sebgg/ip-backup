@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Revisionshistorik}{}% 1
+\BOOKMARK [1][-]{section.2}{Grundläggande information för installation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Programversioner}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Python3}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Installation\040av\040Python3}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Installation\040av\040pip\040och\040virtualenv}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Köra en python3 fil}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Atom}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Installation}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Git}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Installation}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Komma igång}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Flask\040och\040Jinja2}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Installation}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Användning}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Felsökning och underhåll}{}% 16
+\BOOKMARK [2][-]{subsection.7.1}{Felsökning Flask}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.2}{Underhåll}{section.7}% 18
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Git}{subsection.7.2}% 19
+\BOOKMARK [2][-]{subsection.7.3}{Projektmodifiering}{section.7}% 20
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Lägga till projekt}{subsection.7.3}% 21
+\BOOKMARK [3][-]{subsubsection.7.3.2}{modifiera\040ett\040existerande\040projekt}{subsection.7.3}% 22

@@ -1,0 +1,68 @@
+\contentsline {chapter}{\numberline {1}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ME}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Boss Class Reference}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Character Class Reference}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Constructor \& Destructor Documentation}{8}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Character()}{8}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Character()}{8}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}Member Function Documentation}{8}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}gravity()}{8}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}take\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}damage()}{8}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Member Data Documentation}{9}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}damage\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}modifier}{9}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}fall\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}speed}{9}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}falling}{9}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}health\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}points}{9}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}platform}{9}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}shoot\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}clock}{9}{subsubsection.4.2.3.6}
+\contentsline {section}{\numberline {4.3}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Engine Struct Reference}{10}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Constructor \& Destructor Documentation}{10}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Engine()}{10}{subsubsection.4.3.1.1}
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{10}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}run()}{10}{subsubsection.4.3.2.1}
+\contentsline {section}{\numberline {4.4}Object Class Reference}{10}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Constructor \& Destructor Documentation}{11}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Object()}{11}{subsubsection.4.4.1.1}
+\contentsline {subsection}{\numberline {4.4.2}Member Data Documentation}{11}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}texture}{11}{subsubsection.4.4.2.1}
+\contentsline {section}{\numberline {4.5}Platform Class Reference}{11}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Constructor \& Destructor Documentation}{12}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Platform()}{12}{subsubsection.4.5.1.1}
+\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{12}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}render()}{12}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}update()}{12}{subsubsection.4.5.2.2}
+\contentsline {section}{\numberline {4.6}Player Class Reference}{13}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Constructor \& Destructor Documentation}{13}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Player()}{13}{subsubsection.4.6.1.1}
+\contentsline {subsection}{\numberline {4.6.2}Member Function Documentation}{13}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}check\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}parry()}{13}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}render()}{13}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}shoot()}{14}{subsubsection.4.6.2.3}
+\contentsline {subsubsection}{\numberline {4.6.2.4}update()}{14}{subsubsection.4.6.2.4}
+\contentsline {section}{\numberline {4.7}Play\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}State Class Reference}{14}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Constructor \& Destructor Documentation}{14}{subsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.1.1}Play\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}State()}{15}{subsubsection.4.7.1.1}
+\contentsline {subsubsection}{\numberline {4.7.1.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Play\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}State()}{15}{subsubsection.4.7.1.2}
+\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{15}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}display\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}loss()}{15}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}display\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}win()}{15}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}screen()}{15}{subsubsection.4.7.2.3}
+\contentsline {subsubsection}{\numberline {4.7.2.4}update\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}gravity()}{15}{subsubsection.4.7.2.4}
+\contentsline {subsubsection}{\numberline {4.7.2.5}update\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}screen()}{16}{subsubsection.4.7.2.5}
+\contentsline {section}{\numberline {4.8}Projectile Class Reference}{16}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Constructor \& Destructor Documentation}{16}{subsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.1.1}Projectile()}{16}{subsubsection.4.8.1.1}
+\contentsline {subsection}{\numberline {4.8.2}Member Function Documentation}{17}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}invert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}direction()}{17}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}render()}{17}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}update()}{17}{subsubsection.4.8.2.3}
+\contentsline {subsection}{\numberline {4.8.3}Member Data Documentation}{17}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}damage\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}modifier}{17}{subsubsection.4.8.3.1}
+\contentsline {subsubsection}{\numberline {4.8.3.2}direction}{17}{subsubsection.4.8.3.2}
+\contentsline {subsubsection}{\numberline {4.8.3.3}height}{18}{subsubsection.4.8.3.3}
+\contentsline {subsubsection}{\numberline {4.8.3.4}width}{18}{subsubsection.4.8.3.4}
+\contentsline {chapter}{Index}{19}{section*.15}

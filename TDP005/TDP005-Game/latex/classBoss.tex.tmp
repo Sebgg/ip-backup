@@ -1,0 +1,70 @@
+\hypertarget{classBoss}{}\section{Boss Class Reference}
+\label{classBoss}\index{Boss@{Boss}}
+
+
+Inheritance diagram for Boss\+:
+% FIG 0
+
+
+Collaboration diagram for Boss\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoss_a1c036962e9f34b95fdbeed540cb6a3e5}{Boss} (int)
+\item 
+void \hyperlink{classBoss_a96e6129f4b02c3529a0898818dd686bc}{shoot} (std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&) override
+\item 
+void \hyperlink{classBoss_aca506dc369924005b507b6dd6a9bcfae}{update} (std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&, \hyperlink{classObject}{Object} $\ast$, \hyperlink{classObject}{Object} $\ast$) override
+\item 
+void \hyperlink{classBoss_aae6097d3a095a3b28a438cb0e094701e}{render} (sf\+::\+Render\+Window \&) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoss_a1c036962e9f34b95fdbeed540cb6a3e5}\label{classBoss_a1c036962e9f34b95fdbeed540cb6a3e5}} 
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Boss()}{Boss()}}
+{\footnotesize\ttfamily Boss\+::\+Boss (\begin{DoxyParamCaption}\item[{int}]{stage }\end{DoxyParamCaption})}
+
+\hyperlink{classBoss}{Boss} constructor implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoss_aae6097d3a095a3b28a438cb0e094701e}\label{classBoss_aae6097d3a095a3b28a438cb0e094701e}} 
+\index{Boss@{Boss}!render@{render}}
+\index{render@{render}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Boss\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{drawto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draws the boss and boss-\/hp on the screen. 
+
+Implements \hyperlink{classObject}{Object}.
+
+\mbox{\Hypertarget{classBoss_a96e6129f4b02c3529a0898818dd686bc}\label{classBoss_a96e6129f4b02c3529a0898818dd686bc}} 
+\index{Boss@{Boss}!shoot@{shoot}}
+\index{shoot@{shoot}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Boss\+::shoot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&}]{objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\hyperlink{classBoss}{Boss} shoot implementation. Generates two random numbers, one for height and width, dis; and one for the y-\/position, dis2, of the projectile. 
+
+Implements \hyperlink{classCharacter}{Character}.
+
+\mbox{\Hypertarget{classBoss_aca506dc369924005b507b6dd6a9bcfae}\label{classBoss_aca506dc369924005b507b6dd6a9bcfae}} 
+\index{Boss@{Boss}!update@{update}}
+\index{update@{update}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Boss\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&}]{,  }\item[{\hyperlink{classObject}{Object} $\ast$}]{,  }\item[{\hyperlink{classObject}{Object} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\hyperlink{classBoss}{Boss} implementation of update. The random generator generates a number for the shoot\+\_\+clock to compare to, introducing some randomness in the boss pattern. 
+
+Implements \hyperlink{classObject}{Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Boss.\+h\item 
+Boss.\+cc\end{DoxyCompactItemize}

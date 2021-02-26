@@ -1,0 +1,143 @@
+
+
+<program>    ::= <stmt_list>
+
+<stmt_list>  ::= <stmt><stmt_list>
+	            | <stmt>
+
+<stmt>       ::= <io_stmt>
+              | <return_stmt>
+              | <condition_stmt>
+              | <iter_stmt>
+              | <func_stmt>
+              | <assign_stmt>
+              | <expr>
+
+
+
+
+<io_stmt>    ::= <print_stmt>
+
+<print_stmt> ::= 'print'   <expr>
+              | 'println' <expr>
+
+
+
+
+<iter_stmt>  ::= <for_stmt>
+              | <while_stmt>
+
+<for_stmt>   ::= 'for' <assign_stmt> ';' <or_expr> ';' <assign_stmt> ';' '{' <stmt_list> '}'
+
+<while_stmt> ::= 'while' <or_expr> '{' <stmt_list> '}'
+
+
+
+
+<func_stmt>  ::= <func_def>
+
+<func_def>   ::= 'func' <func_id> '(' <params> ')' '{' <stmt_list> '}'
+              | 'func' <func_id> '('')' '{' <stmt_list> '}'
+
+<params>     ::= <param>
+              | <params> <param>
+
+<param>      ::= /[A-Za-z]+/
+
+<func_id>    ::= /[A-Za-z]+/
+
+<return_stmt>::= 'return' <expr>
+
+
+<func_call>  ::= <func_id> '(' <args> ')'
+              |  <func_id> '(' ')'
+
+<args>       ::= <arg>
+              |  <args> <arg>
+
+<arg>        ::= <expr>
+
+
+
+<assign_stmt>::= <var> '=' <expr>
+
+
+<condition_stmt>::= <if_stmt>
+                  | <elif_stmt>
+                  | <else_stmt>
+
+<if_stmt>    ::= 'if' <expr> '{' <stmt_list> '}'
+<elif_stmt>  ::= 'elif' <expr> '{' <stmt_list> '}'
+<else_stmt>  ::= 'else' '{' '}'
+              |  'else' '{' <stmt_list> '}'
+
+
+<expr>       ::= <or_expr>
+
+<or_expr>    ::= <or_expr> 'or' <and_expr>
+              |  <and_expr>
+
+<and_expr>   ::= <and_expr> 'or' <and_expr>
+              |  <not_expr>
+
+<not_expr>   ::= 'not' <not_expr>
+              |  <comp_expr>
+
+
+<comp_expr>  ::= <add_expr> <logic_comp> <add_expr>
+              |  <add_expr>
+
+<logic_comp> ::= '=='
+              |  '<='
+              |  '>='
+              |  '>'
+              |  '<'
+              |  '!='
+
+
+<add_expr>  ::= <add_expr> '+' <mult_expr>
+             |  <add_expr> '-' <mult_expr>
+             |  <mult_expr>
+
+<mult_expr> ::= <mult_expr> '*' <mult_expr>
+             |  <mult_expr> '/' <mult_expr>
+             |  <variables>
+
+
+<variables> ::= <func_call>
+             |  <digit>
+             |  <string>
+             |  <boolean>
+             |  <var>
+
+<digit>     ::= /\d+/
+
+<string>    ::= '"' /.+/ '"'
+
+<boolean>   ::= 'true'
+             |  'false'
+
+<var>       ::= /[A-Za-z]+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#

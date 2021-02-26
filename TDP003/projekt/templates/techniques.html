@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+{% block title %}
+Techniques
+{% endblock %}
+{% block body %}
+<!---<div class="container">
+{% for technique in techniques %}
+  <div class="row justify-content-around">
+    <div class="col-4">
+      <p>{{ technique }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>--->
+<div id="accordion" class="shadow">
+  {% for technique, projects in techniques.items() %}
+  <div class="card" id="cardbody">
+    <div class="card-header" id="heading{{ technique }}">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#{{ technique }}" aria-expanded="true" aria-controls="{{ technique }}">
+          {{ technique }}
+        </button>
+      </h5>
+    </div>
+
+    <div id="{{ technique }}" class="collapse" aria-labelledby="heading{{ technique }}" data-parent="#accordion" aria-expanded="false">
+      <div class="card-body">
+        {% for project in  projects%}
+        <div class="card text-black mb-3 shadow" id="singlecard">
+          <div class="card-header">
+            <a href="{{ url_for('project', project_id=project.project_id) }}">
+              <figure class="figure" id="figure">
+                <img src="{{url_for('static', filename='images/' + project.img_small )}}" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">{{ project.img_caption }}</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ project.project_name }}</h3>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+nav {
+  background-color: Seashell;
+  margin-bottom: 3%;
+}
+
+ li :hover {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+  background-color: LightGray;
+}
+
+li :clicked {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+   -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+        box-shadow: inset 0px 0px 5px #c1c1c1;
+}

@@ -1,0 +1,45 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega16A"</DEVICE>
+ <WORKING_DIR>X:\Documents\tsiu02\lab2\lab2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m16Adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>X:\Documents\tsiu02\lab2\lab2\Debug/lab2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>lab2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>lab2.map</FILE>
+  <FILE>lab2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>10</LINE></start>
+  <INIT><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>17</LINE></INIT>
+  <MESSAGE><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>110</LINE></MESSAGE>
+  <MORSE_LOOP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>20</LINE></MORSE_LOOP>
+  <NOBEEP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>94</LINE></NOBEEP>
+  <GET_CHAR><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>35</LINE></GET_CHAR>
+  <SPACE><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>73</LINE></SPACE>
+  <LOOKUP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>38</LINE></LOOKUP>
+  <CREATE_BEEP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>53</LINE></CREATE_BEEP>
+  <BTAB><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>113</LINE></BTAB>
+  <GET_BIT><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>49</LINE></GET_BIT>
+  <DAT><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>65</LINE></DAT>
+  <DIT><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>61</LINE></DIT>
+  <BEEP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>89</LINE></BEEP>
+  <POST_BEEP><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>68</LINE></POST_BEEP>
+  <CYCLE><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>77</LINE></CYCLE>
+  <DELAY><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>99</LINE></DELAY>
+  <NOCYCLE><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>83</LINE></NOCYCLE>
+  <delayYttreLoop><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>101</LINE></delayYttreLoop>
+  <delayInreLoop><FILE>X:\Documents\tsiu02\lab2\lab2\lab2.asm</FILE><LINE>103</LINE></delayInreLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

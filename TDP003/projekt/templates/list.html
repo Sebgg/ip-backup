@@ -1,0 +1,112 @@
+{% extends "template.html" %}
+{% block title %}
+List
+{% endblock %}
+{% block body %}
+<div id="searchbox" class="rounded input-group">
+  <form action="{{ url_for('search') }}" method="post" id="searchboi" class="shadow rounded">
+  <input type="text" name="search" class="form-control rounded-left" placeholder="Search" aria-label="Text input with segmented dropdown button" >
+  <div class="input-group-append">
+      <button type="submit" class="btn btn-outline-secondary" onclick="{{ url_for('search') }}">Search</button>
+      <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split rounded-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu shadow">
+        <b>Search in</b>
+        <div class="form-check">
+          <input name="fields" class="form-check-input" type="checkbox" value="project_id" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Project-id
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="fields" class="form-check-input" type="checkbox" value="course_code" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Course Code
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="fields" class="form-check-input" type="checkbox" value="course_name" id="defaultCheck3" >
+          <label class="form-check-label" for="defaultCheck3">
+          Course Name
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="fields" class="form-check-input" type="checkbox" value="group_size" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+          Group Size
+          </label>
+        </div>
+        <br>
+        <b>Sort by</b>
+        <div class="form-check">
+          <input name="sort" class="form-check-input" type="radio" id="Radio1" value="start_date" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Start date
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="sort" class="form-check-input" type="radio" id="Radio2" value="end_date">
+          <label class="form-check-label" for="exampleRadios2">
+            End date
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="sort" class="form-check-input" type="radio" id="Radio2" value="course_points">
+          <label class="form-check-label" for="exampleRadios2">
+            Course points
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="sort" class="form-check-input" type="radio" id="Radio2" value="group_size">
+          <label class="form-check-label" for="exampleRadios2">
+            Group size
+          </label>
+        </div>
+        <br>
+        <b>Sort order</b>
+        <div class="form-check">
+          <input name="order" class="form-check-input" type="radio" id="Radio2" value="desc" checked>
+          <label class="form-check-label" for="exampleRadios2">
+            Descending
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="order" class="form-check-input" type="radio" id="Radio2" value="asc">
+          <label class="form-check-label" for="exampleRadios2">
+            Ascending
+          </label>
+        </div>
+      </div>
+  </div>
+  </form>
+</div>
+{% for project in result %}
+<ul class="list-unstyled shadow rounded" id="projectlist">
+  <div class="card">
+    <div class="card-body">
+      <li class="media">
+          <figure class="figure">
+            <a href="{{ url_for('project', project_id=project.project_id) }}">
+              <img src="{{ url_for('static', filename='images/' + project.img_large) }}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            </a>
+            <figcaption class="figure-caption">{{ project.img_caption }}</figcaption>
+          </figure>
+          <div class="media-body">
+            <a href="{{ url_for('project', project_id=project.project_id) }}"><h3 class="mt-0 mb-1">{{ project.project_name }}</h3></a>
+            {{ project.short_description }}
+            <br>
+            <ul class="list-inline">
+            Tekniker:
+            {% for technique in project.techniques_used %}
+            <li class="list-inline-item"> {{ technique }} </li>
+            {% endfor %}
+            </ul>
+            <a href="{{ url_for('project', project_id=project.project_id) }}">Läs mer.</a>
+          </div>
+      </li>
+    </div>
+  </div>
+</ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,42 @@
+2.1:
+1: mkdir -p TDP004/lab1: mkdir skapar directory, -p säger att den ska skapa ett parent directory om det inte finns
+2: cd TDP004, touch README.md: skapar en fil "README.md" utan att göra något med den, öppna i en editor och skriv något, med hjälp av "editor" README.md
+3: Gå in på gitlab.ida.liu.se, skapa ett repository med knappen "New repository", namnge och tryck skapa.
+4: Stå i rootmappen TDP004, skriv git init, git remote add origin git@gitlab.ida.liu.se:<liuid>/TDP004.
+5: Git add ., git commit -m 'Initial commit', git push -u origin master. Mer info finns här(länk till uppgift 1)
+
+2.2:
+1: ssh -X <liuid>@remote-und.ida.liu.se, skriv in lösenord
+2: mkdir TDP004, cd TDP004, git init, git remote add origin git@gitlab.ida.liu.se:<liuid>/TDP004
+3: git pull origin master: säger till att du vill ha det som finns i "origin", till din "master"-branch.
+4: mkdir -p lab2/documentation, se 2.1.1
+5: mkdir lab1. Git sparar inte mappar explicit, utan bara om de innehåller något, men skapar inte konflikt mellan mappar, bara filer. touch lab1.cc
+6: touch lab2.cc lab2.h: skapar båda filerna
+7: mv lab2* ../lab2. Betyder flytta alla filer som heter något med lab2 till en mapp som heter lab2 som ligger på samma nivå som den nuvarande mappen.
+8: cd .. för att komma upp ett steg i filsystemet. vim README.md för att öppna README.md i vim, "o" för att börja skriva på en ny rad, "esc"
+för att ta mig ur "insertmode", :wq för att spara och stänga dokumentet.
+9: touch junk.temp
+10: vim .gitignore. "i" för att ta mig in i "inputmode", skriv "*.~" på första raden, och "*.temp" på nästa, sen "esc" och ":wq" för att spara och stänga filen
+11: git add ., git commit -m 'First commit from remote', git push
+12: "exit" för att ta dig ur ssh-sessionen
+
+2.3:
+1: vim README.md, skriv något, spara och stäng.
+2: git pull: merge error. git add ., git commit -m 'Pre merge commit'. Öppna filen, så ser man "<<<<<<< HEAD" följt av det som vi skrev i "1",
+följt av "=======" och det som vi skrev i 2.2.8, och sist ">>>>>>> origin/master". Jag väljer att ta det som kommer från "origin/master",
+så jag tar bort "<<<<<<< HEAD", det som står emellan här,"=======" och ">>>>>>> origin/master" raden. sedan git add ., git commit -m 'Merge resolved', git push
+
+2.4:
+1: touch test.py i TDP004, skriv något kort program, se till att "#! /usr/bin/env python3" så att filen kan köras. I terminalen skriv "chmod u+x test.py" för att få körrättighheter på filen, pröva med "./test.py"
+2: echo  "#Detta är en kommentar som skapats med echo" >> test.py: >> skriver till slutet av filen istället för att skriva över den.
+3: cp -r lab2 lab3: kopiera, rekursivt mappen lab2, döp om den till lab3, och lägg den i samma mapp som lab2 ligger i.
+4: cd lab3, mv lab2.cc lab3.cc, mv lab2.h lab3.h
+5: scp -r <liuid>@remote-und.ida.liu.se:TDP004/lab1 lab4, cd lab4, mv lab1.cc lab4.cc
+
+2.5:
+1: cd ~, sudo apt-get install tree, tree TDP004 >> TDP004/README.md
+
+2.6:
+1: find -type f -executable
+2: find -type f -executable -exec grep -l "#! /usr/bin/env python3" {} \;, se uppgift3 på startsidan för mer info
+3: cat * .* | grep "^#": första delen säger alla vanliga filer, och alla filer där namnet börjar med ".". Andra delen säger att vi vill ha alla rader som börjar med "#"

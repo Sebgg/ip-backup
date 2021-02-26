@@ -1,0 +1,54 @@
+{% extends "template.html" %}
+{% block title %}
+Mainpage
+{% endblock %}
+<!--
+<BEGIN COPYRIGHT>
+hej
+this is a cool file
+hej svej, på dej
+<END COPYRIGHT>
+-->
+{% block body %}
+<div class="flex-container" id="about">
+  <div class="row">
+    <div class="col shadow-lg" data-parallax="true" id="imginfo">
+      <div id="img">
+        <img src="https://image.shutterstock.com/image-photo/funny-man-watermelon-helmet-googles-450w-157354478.jpg"/>
+      </div>
+      <div id="info">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam susc
+          ipit tellus mollis tortor facilisis, et faucibus urna lobortis. In sit
+           amet finibus mauris, nec sagittis arcu. Donec varius ut ipsum ut vulp
+           utate. Aenean massa felis, faucibus at dui eu, faucibus molestie tell
+           us. Maecenas erat ex, tempus vel venenatis eu, gravida ut est. Suspen
+           disse eros ex, blandit eget pellentesque vel, convallis vel orci. Fus
+           ce sit amet sem dignissim, auctor purus eu, pharetra leo. Duis placer
+           at ante sit amet felis gravida, et elementum leo convallis. Morbi nis
+           l massa, suscipit non mollis id, ultricies id purus. In est velit, ru
+           trum vitae neque nec, sollicitudin commodo nibh. Aenean vestibulum nu
+           nc quam, vel placerat urna vehicula facilisis. Cras quis rhoncus ante
+           , at sollicitudin nisi. In diam nisi, ullamcorper eu maximus quis, f
+           eugiat non mi. Sed accumsan nec turpis malesuada consequat. Cras ut o
+           dio vel nisl fermentum cursus.
+         </p>
+      </div>
+    </div>
+    <div class="col shadow-lg" id="projectinfo">
+
+        <p>
+          <img src="{{ url_for('static', filename='images/' + project.img_small) }}" id="projectimg"/>
+          {{ project.short_description }}
+          <a href="{{ url_for('project', project_id=project.project_id) }}">Läs mer.</a>
+        </p>
+    </div>
+    <!--
+    <BEGIN COPYRIGHT>
+hej
+this is a cool file
+hej svej, på dej
+<END COPYRIGHT>
+    -->
+  </div>
+</div>
+{% endblock %}

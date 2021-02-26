@@ -1,0 +1,28 @@
+#input-div {
+  background-color: Seashell;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
+#result-div {
+  background-color: Seashell;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
+.resultOne {
+  background-color: Ivory;
+  padding: 2%;
+}
+
+.resultMany {
+  background-color: Ivory;
+  padding: 2%;
+  margin: 2%;
+}
+
+#noResults {
+  background-color: Ivory;
+  padding: 2%;
+  text-align: center;
+}

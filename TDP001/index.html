@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+	<title>Bloggen</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="body">
+		<header>
+			<p>Sebastian Grunditz Blogg</p>
+		</header>
+		<ul>
+  		<li><a href="#in1">Inlägg 1</a></li>
+			<li><a href="#in2">Inlägg 2</a></li>
+			<li><a href="#in3">Inlägg 3</a></li>
+			<li><a href="#in4">Inlägg 4</a></li>
+			<li><a href="slut.html">Slutuppgiften</a></li>
+		</ul>
+		<div class="inlägg" id="in1">
+			<h1>Uppgift 1, Versionskontroll med GitLab</h1>
+			<p>Jag började med att komma åt min remote-dator med hjälp av
+				<h4>ssh -X sebgr273@remote-und.ida.liu.se</h4>
+				där -X flaggan gör att jag kan öppna filer på remote-datorn lokalt.</p>
+				<br>
+				Sedan skapade jag en ssh-nyckel, som behövs for att gitlab ska kunna
+				<br>
+				verifiera att det är jag som ska använda det, med hjälp av</p>
+				<h4>ssh-keygen -t rsa "GitLab -b 4096</h4>
+				<p>Den lade jag upp på rätt ställe på GitLabs hemsida, genom
+				<br>
+				att kopiera den publika nyckeln <b>id_rsa.pub</b>, med hjälp av
+				<br>
+			  text-editorn <b>Atom</b></p>
+
+				<p>När det var färdigt, skapade jag ett projekt i GitLab, och följde deras
+				<br>
+				instruktioner för att lägga till ett projekt i en existerande folder.
+				<br>
+				Till att börja med gick jag till min <b>wwwpub</b> folder, med hjälp av
+				<h4>cd //wwwpub/sebgr273/TDP001</h4>
+				Efter det var det dags att länka foldern till GitLab, detta med hjälp av
+				<h4>git init</h4>
+				<h4>git remote add origin git@gitlab.ida.liu.se:sebgr273/TDP001.git</h4>
+				När det var färdigt skulle jag lägga till alla lokala filer, så att de
+				<br>
+				kan läggas upp på projektet pa GitLabs servrar, med
+				<h4>git add .</h4>
+				Man skriver <b>.</b> så man slipper skriva vilka filer man vill lägga med,
+				<br>
+				utan man får med alla. De sista två stegen är att committa alla filer, så
+				<br>
+				att de ligger och väntar på att bli pushade till servern. Detta görs med
+				<h4>git commit -m ""</h4>
+				, där <b>-m</b> flaggan innebär att man lägger till ett meddelande till commiten,
+				<br>
+				och
+				<h4>git push -u origin master</h4>
+				Men man behöver inte alltid skriva hela sista kommandot, utan det brukar
+				<br>
+				räcka med
+				<h4>git push</h4>
+			</p><br><br>
+			<a href="https://gitlab.ida.liu.se/sebgr273/TDP001.git"> Länk till projektet</a>
+		</div>
+		<div class="inlägg" id="in2">
+			<h1>Uppgift 2, Enkel filhantering i terminalen</h1>
+			<p>I den här laborationen fanns det fyra uppgifter, där tre av dom var baserade
+				<br>
+			på en fil kallad resultat.txt. Jag började med att ladda ner den, och gå till den med
+			<h4>cd tdp001</h4>
+			Efter det kom uppgifterna.
+			<h3>Del 1: </h3>
+			Uppgiften var att med hjälp av <b>grep</b> hitta alla rader där för eller efternamn
+			<br>slutar med "on". Detta löste jag med
+			<h4>grep on resultat.txt</h4>
+			där <b>grep</b> läser in filen, resultat.txt här, och filtrerar resultaten med hjälp av "on".
+			<h3>Del 2: </h3>
+			Uppgiften här var att skriva ut de fem första raderna som inte innehåller "son".
+			<br>
+			Detta löste jag som i del 1, fast med några extra steg
+			<h4>grep -v son resultat.txt | head -n5</h4>
+			Flaggan <b>-v</b> gör att den istället excluderar de resultat med "son" i.
+			<br>
+			Sedan använder jag <b>|</b> för att "Pipea", skicka vidare resultatet till nästa funktion
+			<br>
+			<b>head</b> som tar de första raderna man specificerar med hjälp av <b>-n5</b>, i det här fallet de 5 första.
+			<h3>Del 3: </h3>
+			Nu skulle jag hitta filer i en annan map, med filnamn på formatet xxx.so.d, där xxx är dess namn och d är ett (eller flera separerade med .) heltal,
+			<br>
+			och skriva ut namnet (xxx-delen av namnet) på de filer jag hittar. Detta gjorde jag med
+			<h4> find /usr/lib -name \*.so\* | awk -F '/|.so' '{print $4 $5}' | uniq > out.txt</h4>
+			<b>Find</b> hittar alla filer med <b>-name</b> på sökvägen som ges innan. Namnet här betyder <b>alla filer som heter något.so, och som kanske har något efter sig.</b>
+			<br>
+			Sedan pipeas, se tidigare del för förklaring, det in i <b>awk</b>, som skriver ut det.
+			<br>
+			Flaggan <b>-F</b> sätter 'delimiters', avgränsare där vi skär i texten. I det här fallet vill jag inte ha med sökvägen <b>/usr/lib</b>,
+			<br>
+			samt det som ligger efter <i>.so</i>. Med hjälp av <b>|</b> kan man skriva in flera 'delimiters'. <b>'{print $4 $5}'</b>
+			<br>
+			skriver ut det fjärde och femte textobjektet som skapats efter att vi har 'skurit' i texten. <b>Uniq</b> tar bort alla 'duplicates', repetitioner,
+			<br>
+			så att det inte står samma sak flera gånger. Sist skriver jag in allt jag gjort i filen <i>out.txt</i> med hjälp av <b>></b>,
+			<br>
+			som skapar en fil och skriver in allt som kommandot har producerat.
+			<h3> Del 4: </h3>
+			Uppgiften var att skriva ut antalet rader i filen där <i>an</i> eller <i>An</i> finns.
+			<h4>grep -c '[Aa]n' resultat.txt</h4>
+			gjorde detta lätt och smidigt. <b>grep</b> läser filen, <b>-c</b> flaggan säger att man bara vill ha ut hur många rader som den hittar.
+			<br>
+      <b>[Aa]n</b> hittar alla rader där <i>An</i> eller <i>an</i> finns, de måste sitta ihop, så t.ex. <i>alun</i> blir inte rätt,
+			och allt läses ifrån <i>resultat.txt</i>.
+		</div>
+		<div class="inlägg" id="in3">
+			<h1>Uppgift 3, använda <b>find</b></h1>
+			Den här labben bestod av två uppgifter. Den första var att använda <b>find</b> för att hitta alla <i>.py</i> som är körbara,
+			<br>
+			och som har "shebangen" <i>#! /usr/bin/env python3</i> högst upp i filen. Detta gjorde jag med:
+			<h4>find -type f -executable -exec grep -l "#! /usr/bin/env python3" {} \;</h4>
+			där <b>type</b>-flaggan specificerar vad det är man letar efter, en (f)ile det här fallet. <b>Executable</b>-flaggan kollar om det vi letar efter
+			<br>
+			får köras (av mig). <b>Exec</b>-flaggan kör det som skrivs efteråt, i det här fallet vill vi kolla så att det står <i>#! /usr/bin/env python3</i> högst upp i filen.
+			<br>
+			<br>
+			Den andra uppgiften var att hitta alla filer i min hemmapp, <i>~</i>, som är större än fem megabyte, detta gjorde jag med:
+			<h4>find -type f -size +5M</h4>
+			<b>Type</b>-flaggan har jag redan gått igenom i förra deluppgiften, men <b>size</b>-flaggan gör så att find letar efter alla filer med vald storlek. För uppgiften
+			<br>
+			var storleken "större än fem megabyte", så <i>+5M</i> betyder att vi vill leta efter alla filer som är större än fem mebibytes, kort Mib. En mebibyte är inte
+			<br>
+			exakt lika stor som en megabyte, utan den är 1024x1024 bytes stor, där en megabyte är 1000x1000 bytes stor. Men det skiljer så få bytes att det inte spelar någon
+			<br>
+			större roll, samt att i princip alla Unix-system använder sig av MiB eller liknande.
+		</div>
+		<div class="inlägg" id="in4">
+			<h1>Uppgift 4, Reguljära uttryck, <b>regex</b></h1>
+			Den här labben bestod av fyra uppgifter, som alla kretsar kring reguljära uttryck. Mer att läsa om regex finns <a href="https://en.wikipedia.org/wiki/Regular_expression" id="inlinelink">här.</a>
+			<h3>Deluppgift 1</h3>
+			Första uppgiften var att matcha liu-id:n, som kommer på formatet fyra eller fem bokstäver, följt av två eller tre siffor. Detta gjorde jag med:
+			<h4>[A-Za-z]{4,5}\d{2,3}</h4>
+			Det uttrycket gör är att matcha a-z, små eller stora bokstäver, <b>[A-Za-z]</b>, exakt fyra till fem gånger, <b>{4,5}</b>, följt av noll till nio, <b>\d</b> exakt två till tre gånger, <b>{2, 3}</b>.
+			<h3>Deluppgift 2 och 3</h3>
+			Dessa två uppgifter bestod av att, först, matcha YYYY-MM-DD, som då är ett datum. Detta gjorde jag med:
+			<h4>\d{4}-\d{2}-\d{2}</h4>
+			Detta uttryck fångar fyra årssiffror, <b>\d{4}</b>, följt av ett bindestreck, <b>-</b> och två månadssiffror, <b>\d{2}</b>, följt av ett bindestreck, och två dagssiffror, <b>\d{2}</b>.
+			<br>
+			Den andra uppgiften var att utöka uttrycket för att kontrollera giltighet på datumet. Dock går det inte att kolla om det ska vara 30, 31, eller 28 dagar i en månad, då vi saknar logik.
+			Det gjorde jag med:
+			<h4>\d{4}-(0[1-9]|1[0-2])-([123]0|[012][1-9]|31)</h4>
+			Som förut matchas noll till nio, exakt fyra gånger, följt av ett bindestreck, följt av att matcha 01 till och med 09 eller 10 till och med 12, <b>(0[1-9]|1[0-2])</b> följt av bindestreck följt av att matcha 10, 20, 30, <b>([123]0</b> eller 01 till och med 29,<b>|[012][1-9]</b>,inte inräknat 10, 20, eller 30, så inte
+			00. Även 31 är ok som indata med hjälp av <b>|31)</b>.
+			<br>
+			<h3>Deluppgift4</h3>
+			Den sista uppgiften var att skapa ett python3 program, som visar allt som är mellan <b>&lt;html&gt;</b> och <b>&lt;/html&gt;</b>, med hjälp av reguljära uttryck. Python-programmet i sig är inte jätteintressant, men full källkod finns <a href="https://gitlab.ida.liu.se/sebgr273/TDP001/blob/7703e318620aa03318a488279e1b0013988c4fc6/uppgift4.py" id="inlinelink">här.</a>
+			Det spännande är det uttryck som jag använde för att hitta allt:
+			<h4>(?s)(?&lt;=&lt;html lang="[A-Za-z]{2}"&gt;)(.*?)(?=&lt;/html&gt;)</h4>
+			<b>(?s)</b> gör så att <b>.</b> även inkluderar <i>newline</i>-karaktärer, vilket uttrycket inte gör annars. Det innanför den andra parantesen är det som matchar mot <b>&lt;html&gt;</b>-taggen.
+			<b>?&lt;=&lt;</b> säger att vi vill matcha allt efter matchningen av första gruppen<b>lang="[A-Za-z]{2}"</b> gör så att den matchar <b>&lt;html&gt;</b>-taggen, oavsett vad det står för <i>lang</i> i den.
+			<b>(.*?)</b> matchar alla karaktärer, <b>.</b>, även <i>newline</i>, noll eller flera gånger, <b>*</b>, men så få gånger som möjligt, <b>?</b>. <b>(?=&lt;/html&gt;)</b> säger att vi vill till matchen av <b>&lt;/html&gt;</b>, men inte ta med den.
+		</div>
+	</div>
+	<footer>
+		<p>Kontaktinformation: <a href="sebgr273@student.liu.se">sebgr273@student.liu.se</a> <a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+		src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+		alt="Valid CSS!" />
+</a></p></p>
+		<p id="copyright">Copyright Sebastian Grunditz 2018.     Published 2018 </p>
+	</footer>
+</body>
+</html>

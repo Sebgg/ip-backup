@@ -1,0 +1,16 @@
+testing done on:
+-Config.js
+-main.js
+-messageHandler.js
+-message.model.js
+-user.model.js
+-route.js
+-server.js
+-tokenHandler.js svår att testa, lättare att "testa i frontend"
+-userHandler.js
+-authHandler.js
+
+to test:
+
+comments:
+verkar som istanbul inte vill räkna codecoverage på handlers...

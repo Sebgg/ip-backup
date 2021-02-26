@@ -1,0 +1,79 @@
+\hypertarget{classPlayState}{}\section{Play\+State Class Reference}
+\label{classPlayState}\index{Play\+State@{Play\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayState_a14935ac4ff7ff89dc34c8fa1b01b9a07}{Play\+State} (int)
+\item 
+\hyperlink{classPlayState_a2d9eafdd1495faf454b1350451b9d22f}{$\sim$\+Play\+State} ()
+\item 
+void \hyperlink{classPlayState_af27c539c003adda5ca10736ef8d2a9b9}{update\+\_\+screen} ()
+\item 
+void \hyperlink{classPlayState_a493525123b54430675cd78747aee4571}{update\+\_\+gravity} (float const)
+\item 
+void \hyperlink{classPlayState_aaa2a573ca80d8625e9580726cd501a34}{draw\+\_\+screen} (sf\+::\+Render\+Window \&)
+\item 
+\mbox{\Hypertarget{classPlayState_a73b5e20c0c5fd86ef4f97891990004de}\label{classPlayState_a73b5e20c0c5fd86ef4f97891990004de}} 
+bool {\bfseries check\+\_\+win} () const
+\item 
+\mbox{\Hypertarget{classPlayState_a1540cc8989025569e24d73977b13983d}\label{classPlayState_a1540cc8989025569e24d73977b13983d}} 
+bool {\bfseries check\+\_\+loss} () const
+\item 
+void \hyperlink{classPlayState_abc63c240c1f1ceb026e2ebf4aba45164}{display\+\_\+win} (sf\+::\+Render\+Window \&) const
+\item 
+void \hyperlink{classPlayState_a7d1b378f21f1a42beea2382397c08916}{display\+\_\+loss} (sf\+::\+Render\+Window \&) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayState_a14935ac4ff7ff89dc34c8fa1b01b9a07}\label{classPlayState_a14935ac4ff7ff89dc34c8fa1b01b9a07}} 
+\index{Play\+State@{Play\+State}!Play\+State@{Play\+State}}
+\index{Play\+State@{Play\+State}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{Play\+State()}{PlayState()}}
+{\footnotesize\ttfamily Play\+State\+::\+Play\+State (\begin{DoxyParamCaption}\item[{int}]{stage = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hyperlink{classPlayState}{Play\+State} constructor implementation. \mbox{\Hypertarget{classPlayState_a2d9eafdd1495faf454b1350451b9d22f}\label{classPlayState_a2d9eafdd1495faf454b1350451b9d22f}} 
+\index{Play\+State@{Play\+State}!````~Play\+State@{$\sim$\+Play\+State}}
+\index{````~Play\+State@{$\sim$\+Play\+State}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+Play\+State()}{~PlayState()}}
+{\footnotesize\ttfamily Play\+State\+::$\sim$\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Playstate destructor implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayState_a7d1b378f21f1a42beea2382397c08916}\label{classPlayState_a7d1b378f21f1a42beea2382397c08916}} 
+\index{Play\+State@{Play\+State}!display\+\_\+loss@{display\+\_\+loss}}
+\index{display\+\_\+loss@{display\+\_\+loss}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{display\+\_\+loss()}{display\_loss()}}
+{\footnotesize\ttfamily void Play\+State\+::display\+\_\+loss (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{drawto }\end{DoxyParamCaption}) const}
+
+\hyperlink{classPlayState}{Play\+State} implementation of display\+\_\+loss. Draws the lose screen if the player lost. \mbox{\Hypertarget{classPlayState_abc63c240c1f1ceb026e2ebf4aba45164}\label{classPlayState_abc63c240c1f1ceb026e2ebf4aba45164}} 
+\index{Play\+State@{Play\+State}!display\+\_\+win@{display\+\_\+win}}
+\index{display\+\_\+win@{display\+\_\+win}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{display\+\_\+win()}{display\_win()}}
+{\footnotesize\ttfamily void Play\+State\+::display\+\_\+win (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{drawto }\end{DoxyParamCaption}) const}
+
+\hyperlink{classPlayState}{Play\+State} implementation of display\+\_\+win. Draws the win screen if the player won. \mbox{\Hypertarget{classPlayState_aaa2a573ca80d8625e9580726cd501a34}\label{classPlayState_aaa2a573ca80d8625e9580726cd501a34}} 
+\index{Play\+State@{Play\+State}!draw\+\_\+screen@{draw\+\_\+screen}}
+\index{draw\+\_\+screen@{draw\+\_\+screen}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{draw\+\_\+screen()}{draw\_screen()}}
+{\footnotesize\ttfamily void Play\+State\+::draw\+\_\+screen (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{drawto }\end{DoxyParamCaption})}
+
+\hyperlink{classPlayState}{Play\+State} implementation of draw\+\_\+screen. Draws everything that is shown on the screen. \mbox{\Hypertarget{classPlayState_a493525123b54430675cd78747aee4571}\label{classPlayState_a493525123b54430675cd78747aee4571}} 
+\index{Play\+State@{Play\+State}!update\+\_\+gravity@{update\+\_\+gravity}}
+\index{update\+\_\+gravity@{update\+\_\+gravity}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{update\+\_\+gravity()}{update\_gravity()}}
+{\footnotesize\ttfamily void Play\+State\+::update\+\_\+gravity (\begin{DoxyParamCaption}\item[{float const}]{height }\end{DoxyParamCaption})}
+
+\hyperlink{classPlayState}{Play\+State} implementation of update\+\_\+gravity. Calls the gravity function for player and boss. \mbox{\Hypertarget{classPlayState_af27c539c003adda5ca10736ef8d2a9b9}\label{classPlayState_af27c539c003adda5ca10736ef8d2a9b9}} 
+\index{Play\+State@{Play\+State}!update\+\_\+screen@{update\+\_\+screen}}
+\index{update\+\_\+screen@{update\+\_\+screen}!Play\+State@{Play\+State}}
+\subsubsection{\texorpdfstring{update\+\_\+screen()}{update\_screen()}}
+{\footnotesize\ttfamily void Play\+State\+::update\+\_\+screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classPlayState}{Play\+State} implementation of update\+\_\+screen. Calls the update function on all onscreen Objects. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Play\+State.\+h\item 
+Play\+State.\+cc\end{DoxyCompactItemize}

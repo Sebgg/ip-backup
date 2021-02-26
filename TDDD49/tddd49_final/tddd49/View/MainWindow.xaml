@@ -1,0 +1,135 @@
+﻿<Window x:Class="tddd49.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tddd49.Viewmodel"
+        mc:Ignorable="d"
+        Title="Skit bra tjänst" Height="720" Width="1280"
+        x:Name="mainWindow"
+        d:DataContext="{d:DesignInstance Type=local:ViewModel, IsDesignTimeCreatable=True}">
+    <Window.Resources>
+        <CollectionViewSource Source="{Binding Source={x:Static Application.Current}, Path=Messages}" x:Key="listDataView"/>
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="FriendsGrid" Grid.Row="1" Grid.Column="0" Background="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="175"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="LightGray" BorderThickness="0, 1, 0, 1" Grid.Row="0">
+                <Grid Background="Bisque" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Ip-adress:" Grid.Column="0" Grid.Row="0" Margin="10, 5, 10, 0"/>
+                    <TextBox Text="{Binding Path=IpAddress, Mode=TwoWay}" x:Name="ipInput" Grid.Column="0" Grid.Row="1" Width="auto" Margin="5, 0, 5, 5" />
+                    <TextBlock Text="Port-number:" Grid.Column="0" Grid.Row="2" Margin="10, 5, 10, 0"/>
+                    <TextBox Text="{Binding Path=Port, Mode=TwoWay}" x:Name="portInput" Grid.Column="0" Grid.Row="3" Width="auto" Margin="5, 0, 5, 5"/>
+                    <TextBlock Text="Chat-name:" Grid.Column="0" Grid.Row="4" Margin="10, 5, 10, 0"/>
+                    <TextBox Text="{Binding Path=Name, Mode=TwoWay}" x:Name="nameInput" Grid.Column="0" Grid.Row="5" Width="auto" Margin="5, 0, 5, 5"/>
+                    <Button x:Name="connectButton" Grid.Column="0" Grid.Row="6" Width="auto" Margin="50, 0, 50, 5" Content="{Binding Path=Connect, Mode=TwoWay}" Command="{Binding Path=GetInfoCommand}"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="LightGray" BorderThickness="0, 0, 0, 1"  Grid.Column="0" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="inviteText" Text="{Binding Path=Invite, Mode=OneWay}" Margin="5, 5, 5, 5" Grid.Column="0" Grid.Row="0" Visibility="{Binding Path=InviteVisible, Converter={StaticResource BoolToVisibilityConverter}}" TextWrapping="Wrap"/>
+                    <Button IsEnabled="{Binding Path=PendingInvite, Mode=TwoWay}" x:Name="acceptInvitation" Grid.Column="0" Grid.Row="1" Width="auto" Margin="5, 5, 126, 5" Content="Accept Invitation" Visibility="{Binding Path=InviteVisible, Converter={StaticResource BoolToVisibilityConverter}}" Command="{Binding Path=AcceptInviteCommand}"/>
+                    <Button IsEnabled="{Binding Path=PendingInvite, Mode=TwoWay}" x:Name="declineInvitation" Grid.Column="0" Grid.Row="1" Width="auto" Margin="126, 5, 5, 5" Content="Decline Invitation" Visibility="{Binding Path=InviteVisible, Converter={StaticResource BoolToVisibilityConverter}}" Command="{Binding Path=DeclineInviteCommand}"/>
+                    <TextBlock x:Name="listenPortText"  Text="Port to listen to"  Grid.Column="0" Grid.Row="0" Margin="5, 5, 126, 5" Visibility="{Binding Path=ListenVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    <TextBox x:Name="listenPort" Text="{Binding Path=ListenPort, Mode=TwoWay}" Grid.Column="0" Grid.Row="0" Margin="126, 5, 5, 5" Visibility="{Binding Path=ListenVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    <Button x:Name="startListen" Grid.Column="0" Grid.Row="1" Width="Auto" Margin="50, 5, 50, 5" Content="Listen" Command="{Binding Path=GetPortListenCommand}" Visibility="{Binding Path=ListenVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    <TextBlock x:Name="connectedTo" Text="{Binding Path=ConnectedTo, Mode=TwoWay}" Grid.Column="0" Grid.Row="0" Visibility="{Binding Path=Connected, Converter={StaticResource BoolToVisibilityConverter}}" Margin="5, 5, 5, 5"/>
+                    <Button x:Name="Disconnect" Grid.Column="0" Grid.Row="1" Width="Auto" Margin="50, 5, 50, 5" Content="Disconnect" Visibility="{Binding Path=Connected, Converter={StaticResource BoolToVisibilityConverter}}" Command="{Binding Path=DisconnectCommand}"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="LightGray" BorderThickness="0, 0, 0, 1"  Grid.Column="0" Grid.Row="2" Background="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="searchText" Grid.Column="0" Grid.Row="0" Text="Search here:" Margin="5, 5, 75, 5"/>
+                    <TextBox x:Name="search" Grid.Column="0" Grid.Row="0" Margin="75, 5, 5, 5" Text="{Binding Path=SearchParameter}"/>
+                    <Button x:Name="seachButton" Grid.Column="0" Grid.Row="1" Margin="50, 5, 50, 5" Content="Search" Command="{Binding Path=SearchConversationsCommand}"/>
+                </Grid>
+            </Border>
+            <ScrollViewer Grid.Column="0" Grid.Row="3" Background="White">
+                <ItemsControl x:Name="conversationView" ItemsSource="{Binding Path=Conversations, Mode=TwoWay}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border >
+                                <DockPanel>
+                                    <TextBlock Text="{Binding Path=ConvName}" FontSize="16" FontWeight="DemiBold" Margin="5,0,5,0" DockPanel.Dock="Top"/>
+                                    <TextBlock x:Name="convDate" Text="{Binding Path=ConvDate, StringFormat=yyyy-MM-dd HH:mm:ss}" Margin="5,0,5,0" DockPanel.Dock="Top"/>
+                                    <Button Content="View Conversation" Command="{Binding ElementName=conversationView, Path=DataContext.ShowConversationCommand}" CommandParameter="{Binding Path=ConvDate}" Margin="5" DockPanel.Dock="Bottom"/>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+        <Border BorderBrush="LightGray" BorderThickness="1, 1, 0, 0" Grid.Row="1" Grid.Column="1">
+            <Grid x:Name="MessageGrid" Background="AntiqueWhite">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" MaxHeight="100"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer Grid.Column="0" Grid.Row="0">
+                    <ItemsControl x:Name="messageView" ItemsSource="{Binding Path=Messages, Mode=TwoWay}" Background="White">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border CornerRadius="6" BorderBrush="LightGray" Background="AliceBlue" BorderThickness="1" Margin="5, 5, 5, 5">
+                                    <DockPanel Margin="5, 5, 5, 5">
+                                        <TextBlock Text="{Binding Path=Sender}" DockPanel.Dock="Top" Grid.Column="0" Grid.Row="0" FontWeight="Bold" FontSize="16"/>
+                                        <TextBlock Text="{Binding Path=Date}" DockPanel.Dock="Right" FontSize="14" FontWeight="DemiBold" Grid.Column="1" Grid.Row="0"/>
+                                        <TextBlock Text="{Binding Path=MessageContent}" DockPanel.Dock="Left"  FontSize="14" Grid.Column="0" Grid.Row="1" TextWrapping="Wrap"/>
+                                        <Image Source="{Binding Path=MessageImage}" DockPanel.Dock="Left" Grid.Column="0" Grid.Row="1" MaxHeight="256"/>
+                                    </DockPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+                <Border BorderBrush="LightGray" BorderThickness="0,1,0,0" Grid.Column="0" Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="10, 10, 0, 10" Grid.Column="0" Grid.Row="0" Height="Auto">
+                            <Button x:Name="buzz" Width="auto" Height="39" Content="Buzz" Command="{Binding Path=BuzzCommand}"/>
+                            <Button x:Name="addImage" Width="auto" Height="40" Content="Send Img" Command="{Binding Path=AddImageCommand}"/>
+                        </StackPanel>
+                        <TextBox x:Name="messageInput" Grid.Column="1" Grid.Row="0" Width="auto" Margin="0, 10, 0, 10" Text="{Binding Path=Message, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" FontSize="13"/>
+                        <Button x:Name="sendMessage" Grid.Column="2" Grid.Row="0" Width="auto" Margin="0, 10, 5, 10" Content="Send" Command="{Binding Path=SendCommand}" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

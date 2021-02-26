@@ -1,0 +1,73 @@
+[
+  {
+    "project_id": 1,
+    "project_name": "Coolt namn",
+    "short_description":"This is a short description about the project",
+    "long_description":"This is a long description",
+    "img_large":"123.jpg",
+    "img_small":"proj1_small.jpg",
+    "title":"Kodning i brainfuck",
+    "start_date":180712,
+    "end_date":300918,
+    "course_code":"TDP003",
+    "course_name":"How to kill a meme",
+    "course_points":322,
+    "techniques_used":[
+      "wc3we",
+      "python3",
+      "bogobogosort"
+    ],
+    "group_size":1,
+    "external_links":[
+      "https://www.reddit.com/r/pcmasterrace"
+    ]
+  },
+  {
+    "project_id": 2,
+    "project_name": "Cool namn",
+    "short_description":"This is a short description about the project",
+    "long_description":"This is a long description",
+    "img_large":"123.jpg",
+    "img_small":"proj2_small.jpg",
+    "title":"Kodning i brainfuck",
+    "start_date":180713,
+    "end_date":300918,
+    "course_code":"TDP069",
+    "course_name":"How to kill a meme",
+    "course_points":69,
+    "techniques_used":[
+      "wc3we",
+      "jesus",
+      "tvbananer",
+      "python3"
+    ],
+    "group_size":7,
+    "external_links":[
+
+    ]
+  },
+  {
+    "project_id": 21,
+    "project_name": "Coo namn",
+    "short_description":"This is a short description about the project",
+    "long_description":"This is a long description",
+    "img_large":"123.jpg",
+    "img_small":"proj3_small.jpg",
+    "title":"Kodning i brainfuck",
+    "start_date":180605,
+    "end_date":310918,
+    "course_code":"TDP004",
+    "course_name":"How to kill a meme",
+    "course_points":644,
+    "techniques_used":[
+      "wc3we",
+      "python3",
+      "jesus",
+      "sjupplen"
+    ],
+    "group_size":10,
+    "external_links":[
+
+    ]
+  }
+]

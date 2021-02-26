@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16A"</DEVICE>
+ <WORKING_DIR>E:\Ip\tsiu02\Lab0\Lab0\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m16adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>E:\Ip\tsiu02\Lab0\Lab0\Debug\Lab0.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab0.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab0.map</FILE>
+  <FILE>Lab0.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>3</LINE></start>
+  <init><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>32</LINE></init>
+  <FOREVER><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>13</LINE></FOREVER>
+  <GET_KEY><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>27</LINE></GET_KEY>
+  <LOOP><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>15</LINE></LOOP>
+  <DELAY><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>38</LINE></DELAY>
+  <NOT_10><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>24</LINE></NOT_10>
+  <D_3><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>40</LINE></D_3>
+  <D_2><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>42</LINE></D_2>
+  <D_1><FILE>E:\Ip\tsiu02\Lab0\Lab0\main.asm</FILE><LINE>44</LINE></D_1>
+ </LABELS>
+</ASSEMBLER_INFO>

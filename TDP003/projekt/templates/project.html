@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+{% block title %}
+Project - {{ project.title }}
+{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col shadow rounded" id="projectp" data-parallax="true">
+      <img src="{{ url_for('static', filename='images/' + project.img_large) }}" class="img_larg rounded"/>
+    </div>
+    <div class="col shadow rounded" id="projectp">
+      <ul class="list-unstyled" id="proj-inf-lst">
+        <b>Techniques used:</b>
+        {% for technique in project.techniques_used %}
+          <li>{{ technique }}</li>
+        {% endfor %}
+        <b>Start date: </b>{{ project.start_date }}
+        <br><b>End date: </b>{{ project.end_date }}
+        <br><b>Group size: </b>{{ project.group_size }}
+        <br><b>Course code: </b>{{ project.course_code }}
+        <br><b>Course name: </b>{{ project.course_name }}
+        <br><b>Course points: </b>{{ project.course_points }}
+      </ul>
+    </div>
+  </div>
+  <div class="row align-items-center shadow rounded">
+    <div class="col">
+      <h1>{{ project.long_description }}</h1>
+    </div>
+  </div>
+</div>
+{% endblock %}

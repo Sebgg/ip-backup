@@ -1,0 +1,308 @@
+/*---------------Multitargets-----------*/
+#list, #techniques, #home {
+  flex-grow: 0.5;
+  background-color: #ffffff;
+  padding-bottom: 2px;
+}
+
+#about, #projectlist, #searchbox, #projectsize {
+  display: flex;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+#imginfo, #project {
+  margin-top: 10px
+}
+/*--------------------------------------*/
+/*------------------body----------------*/
+body {
+  background-color: #dce0e8;
+  font-family: "Hack";
+  /*background-image: url('https://i.imgur.com/NVQ1nuu.png');*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff
+}
+
+body a {
+  color: #83cdff;
+  outline: 0;
+}
+
+body a:hover {
+  color: #4f7996;
+  text-decoration: none;
+  text-shadow: -0.01em 0px 2px grey;
+}
+/*--------------------------------------*/
+/*----------------nav-------------------*/
+nav {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+  font-size: 20px;
+}
+
+nav div {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: -2px;
+}
+
+nav div:hover {
+  box-shadow: -1px -1px -5px grey;
+}
+
+nav p {
+  width: auto;
+  margin: auto;
+}
+
+nav a {
+  width: auto;
+  margin: auto;
+}
+
+nav p {
+  padding-right: 24%;
+}
+
+#curr_page {
+  width: 80%;
+  background-color: #ffffff;
+}
+
+#home {
+  margin-top: 4px;
+}
+
+/*--------------------------------------*/
+/*--------------searchbox---------------*/
+#searchboi {
+  display: flex;
+  width: 100%;
+}
+
+#searchbox {
+  background-color: rgba(0,0,0,0);
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.dropdown-menu {
+  padding: 4px;
+}
+
+.form-check-input {
+  text-decoration: none;
+  outline: 0;
+}
+/*--------------------------------------*/
+/*---------------card-------------------*/
+.card {
+    display: flex;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+#cardbody {
+  width: 100%;
+}
+
+#singlecard {
+  display: flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #ffffff
+}
+
+.card-header {
+  width: 100%;
+  align-items: center;
+  background-color: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  box-shadow: -1px -1px -5px grey;
+}
+
+.card-header img {
+  width: 256px;
+  height: 256px;
+}
+
+.card-body {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 5px;
+}
+/*--------------------------------------*/
+/*----------------accordion-------------*/
+#accordion {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#accordion .card {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projectinfo {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#project .col {
+  padding-left: 0;
+}
+
+/*--------------------------------------*/
+/*------------------img-----------------*/
+#img {
+  object-fit: contain;
+}
+
+.media-body {
+  margin-left: 10px;
+}
+
+#projectp {
+  display: flex;
+  width: 50%;
+  padding: auto;
+  align-content: left;
+  align-items: left;
+  justify-content: left;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#projectp .img_larg {
+  width: 100%;
+  height: 100%;
+}
+
+#imginfo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  width: 25%;
+  height: 25%;
+}
+
+#imginfo img {
+  width: 100%;
+  height: 100%;
+}
+
+#projectimg {
+  float: left;
+  margin: 4px 10px 0 0;
+  width: 256px;
+  height: 256px;
+}
+
+.img_larg {
+  width: 256px;
+  height: 256px;
+}
+
+#fourofourimg {
+  width: 40%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure {
+  width: 25%;
+}
+
+#figure {
+  width: 100%;
+}
+/*--------------------------------------*/
+/*---------------col--------------------*/
+.col {
+  background-color: #ffffff;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#accordion .col {
+  background-color: #ffffff;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 5px;
+}
+
+#tre {
+  display: flex;
+  width: 50%;
+  padding: auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/*--------------------------------------*/
+/*------------------list----------------*/
+
+#proj-inf-lst {
+  margin-left: 10px;
+}
+
+#proj-inf-lst li {
+  margin-left: 10px;
+}
+/*--------------------------------------*/
+/*------------------404-----------------*/
+#fourofour {
+  width: 96%;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#fourofourtext {
+  margin-top: 20px;
+}
+/*--------------------------------------*/
+/*--------------fonts-------------------*/
+
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+}
+/*--------------------------------------*/
+/*----------------footer----------------*/
+/*--------------------------------------*/

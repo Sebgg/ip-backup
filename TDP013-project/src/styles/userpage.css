@@ -1,0 +1,67 @@
+#posts {
+  background-color: Seashell;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#personalInfo {
+  background-color: Seashell;
+  padding: 2%;
+}
+
+#noFriends {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+#content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#noToken {
+  background-color: Seashell;
+  padding: 2%;
+}
+
+#fWrite {
+  background-color: Seashell;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+#friend {
+  display: inline-block;
+}
+
+.friend {
+  background-color: White;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+.post {
+  background-color: Ivory;
+  padding: 2%;
+  margin: 4%;
+  margin-top: 2%;
+}
+
+.postinfo {
+  background-color: White;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.postmessage {
+  background-color: White;
+  padding: 3%;
+  padding-top: 1%;
+  margin-bottom: 1%;
+}
+
+.info {
+  background-color: Ivory;
+  padding: 2%;
+}

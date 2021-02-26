@@ -1,0 +1,51 @@
+{
+  "name": "tdp013-projekt",
+  "version": "1.0.0",
+  "description": "Website for project in TDP013",
+  "main": "index.js",
+  "scripts": {
+    "backendtest": "nyc mocha --exit tests/backendTests.js",
+    "inftest": "nyc mocha tests/backendTests.js",
+    "dev": "nodemon server/main.js",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ida.liu.se:sebgr273/tdp013-projekt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.2.0",
+    "classnames": "^2.2.6",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.4",
+    "mongoose-paginate": "^5.0.3",
+    "nodemon": "^1.19.3",
+    "nyc": "^14.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "superagent": "^5.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

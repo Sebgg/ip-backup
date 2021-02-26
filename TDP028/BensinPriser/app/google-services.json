@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "852283675961",
+    "firebase_url": "https://paetrol-87684.firebaseio.com",
+    "project_id": "paetrol-87684",
+    "storage_bucket": "paetrol-87684.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852283675961:android:6032977e32851767fe04e8",
+        "android_client_info": {
+          "package_name": "com.example.bensinpriser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852283675961-idoumi9eruhkhuracrtthu757bj71f8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bensinpriser",
+            "certificate_hash": "5182d05e50ee28dc2152ad93b5995991290eef99"
+          }
+        },
+        {
+          "client_id": "852283675961-hf9jsk54ft9ov7vqm3frf8815j4mraak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbigs8ruXdw6t93qIFn8weGJOOVY1eDxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852283675961-hf9jsk54ft9ov7vqm3frf8815j4mraak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

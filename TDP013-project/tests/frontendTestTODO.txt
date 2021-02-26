@@ -1,0 +1,16 @@
+testing done?: (Y)/N
+
+testing complete for:
+-userPage.js
+-logout
+-navbar.js
+-home.js
+-friendSearch.js
+-login.js
+-signup.js
+
+currently working on:
+
+currently testing on run:
+
+to test:

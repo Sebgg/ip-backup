@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block title %}
+Mainpage
+{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="row align-items-center" id="tre">
+    <div class="col rounded shadow" id="imginfo">
+	    <img src="{{ url_for('static', filename='images/' + project.img_small) }}" class="rounded"/>
+      <p>Blabla Innovativ Programmering memes ye boi</p>
+    </div>
+  </div>
+  <div class="row align-items-center" id="project">
+    <div class="col shadow rounded-left">
+      <div class="col" id="projectinfo">
+        <div class="media">
+          <img class="mr-3 rounded-left" src="{{ url_for('static', filename='images/' + project.img_small) }}" alt="Generic placeholder image">
+          <div class="media-body">
+            <h1 class="mt-0">{{ project.project_name }}</h1>
+            {{ project.short_description }}
+            <a href="{{ url_for('project', project_id=project.project_id) }}">Läs mer.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

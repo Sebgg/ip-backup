@@ -1,0 +1,56 @@
+1/10-18
+start: 09:00
+slut: 14:05
+5h
+datalager
+
+2/10-18
+start: 09:00
+slut: 11:00
+start: 18:40
+slut: 19:40
+3h
+datalager
+
+3/10-18
+start: 08:45
+paus: 10 min
+slut: 10:02
+1:07h
+projektplan
+
+8/10-18
+start:10:45
+slut: 14:15
+3:30h
+hemsida
+
+9/10-18
+start: 13:45
+slut:  16:45
+3h
+hemsida
+
+10/10-18
+start: 10:15
+slut:  15:05
+4:50h
+hemsida
+
+11/10-18
+start: 13:05
+slut:  16:40
+3:35h
+hemsida
+
+16/10-18
+start: 11:30
+slut:  13:55
+2:25h
+hemsida 
+
+17/10-18
+start: 11:40
+slut:  12:50
+1:10h
+hemsida

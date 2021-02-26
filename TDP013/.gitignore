@@ -1,0 +1,3 @@
+geckodriver.log
+/lib/.nyc_output/*
+nodemodules/

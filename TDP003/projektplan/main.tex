@@ -1,0 +1,247 @@
+\documentclass{TDP003mall}
+
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\newcommand{\version}{Version 1.1}
+\author{Jimmie Roos, \url{jimro697@student.liu.se}\\
+Sebastian Grunditz, \url{sebgr273@student.liu.se}}
+\title{Projektplan}
+\date{2018-09-25}
+\rhead{Jimmie Roos\\
+Sebastian Grunditz}
+
+
+
+
+\begin{document}
+\projectpage
+\tableofcontents
+⁠\pagenumbering{gobble}
+\thispagestyle{empty}
+\newpage
+\pagenumbering{arabic}
+\section*{Revisionshistorik}
+\begin{table}[!h]
+\begin{tabularx}{\linewidth}{|l|X|l|}
+\hline
+Ver. & Revisionsbeskrivning & Datum \\\hline
+1.0 & Första utkast & 25/09-18 \\\hline
+1.1 & Korrekturläsning & 26/09-18 \\\hline
+1.2 & Korrigering av projektplan utifrån feedback & 03/10-18 \\\hline
+\end{tabularx}
+\end{table}
+
+
+\section{Introduktion}
+\subsection{Projektbeskrivning}
+Det här projektet är kursen TDP003 Projekt: Egna datormiljön. Målet med projektet är att skapa en hemsida, med ett presentationslager och ett datalager.
+Hemsidan ska agera som portfolio åt oss, så att vi kan, när vi är färdiga med en projekt-kurs, lägga upp resultatet på den. Detta gör det lätt att visa vad vi har gjort för företag, eller andra intressenter.
+\subsubsection{Presentationslager}
+Vårat presentationslager ska jobba tillsammans med vårat datalager med hjälp av \textbf{Flask} och \textbf{Jinja} för att visa upp våra projekt.
+Presentationslagret ska bestå av fyra sidor:
+\begin{itemize}
+    \item \textbf{Startsida} - Första sidan, innehåller en personlig beskrivning, och senast tillagda projekt.
+    \item \textbf{Projektsida} - Sida som visar all information om ett valt projekt.
+    \item \textbf{Tekniksida} - Listar alla tekniker vi använt i våra projekt.
+    \item \textbf{Söksida} - En sida för sökning av projekt med filtrering på tekniker.
+\end{itemize}
+
+\subsubsection{Datalager}
+Datalagret ska jobba ihop med presentationslagret och skicka data som efterfrågas.
+\subsection{Arbetsmetodik}
+Arbete kommer främst ske tillsammans i labsalarna, men det kan även gå över till exempel Discord. Om man har små justeringar man vill göra så kan man göra det när man vill då alla filer finns tillgängliga över git. Varje vecka rangordnas uppgifterna efter prioritet att jobba på, och även de deluppgifter som finns i varje uppgift. Detta innebär alltså att nummer ett på listan har första prioritet och det är den delen som ska jobbas med först i veckan. Veckan ska börja med ett möte där arbetsuppgifterna delas ut, och en check på vad som ska vara färdigt när veckan är slut.
+\subsubsection{Risker}
+Ifall någon blir sjuk, kan arbetet fortsätta hemma, antingen tillsammans över en kommunikationsplatform, exempelvis Discord, eller individuellt,
+för att senare följas upp. Blir det något väldigt allvarligt, får man hantera situationen tillsammans med en projekthandledare.\\
+Om det visar sig att man inte kan använda sig av OpenShift, ta reda på ifall felet ligger hos OpenShift eller projektet. Ifall det ligger hos OpenShift, bör man prata med projekthandledaren och diskutera alternativ. Ifall felet ligger i projektet, bör man leta fram felet och åtgärda.
+\subsubsection{Tekniker}
+\begin{itemize}
+    \item Python3
+    \item Git
+    \item Flask 1.0.2
+    \item Jinja 2
+    \item Json
+    \item Bootstrap
+\end{itemize}
+Hemsidan kommer inte använda fler tekniker än som specificeras i kravspecifikationen , med tillägg av versionshantering genom \url{gitlab.ida.liu.se}, och Bootstrap för att förenkla HTML/CSS processen.
+
+\section{Projektöversikt}
+Hårda deadlines markeras med fetstil över datumet, medan de övriga deadlines är för oss och kan ses som mjuka deadlines. Dessa markeras med kursiv stil.
+Mer ingående info om varje deadline finns beskrivet längre ner i dokumentet, i en veckovis indelning.
+\begin{table}[!h]
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\begin{tabularx}{\linewidth}{|l|R|R|R|}
+\hline
+\textbf{Delmoment} & \textbf{Deadline} & \textbf{Beräknad tid} & \textbf{Faktisk tid} \\\hline \hline
+Projektplan första utkast & \textbf{27/9} & 4h & 2.5h\\\hline
+Grundläggande installationsmanual inlämnad & \textbf{27/9} & 1h & 4h\\\hline \hline
+Slutgiltig projektplan & \textbf{4/10} & 3h & 1.5h\\\hline
+Slutgiltig installationsmanual & \textbf{4/10} & 2h &\\\hline
+Datalagret godkänt av assistent& \textbf{5/10} & 15h & 8h\\\hline \hline
+Fungerande prototyp av hemsidan & \textit{12/10} & 20h &\\\hline \hline
+Systemdemonstration för andra grupper & \textbf{18/10} & 2h &\\\hline
+Portfolion tillgänglig via OpenShift & \textbf{18/10} & 8h &\\\hline
+Första versionen av systemdokumentationen inlämnad & \textbf{18/10} & 8h &\\\hline \hline
+Slutgiltig version av systemdokumentation & \textbf{23/10} & 2h &\\\hline
+Testdokumentation inlämnad & \textbf{23/10} & 10h &\\\hline
+Individuellt reflektionsdokument inlämnat & \textbf{23/10} & 8h &\\\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Milstolpar}
+
+\begin{table}[!h]
+\newcolumntype{l}{>{\raggedright\arraybackslash}X}
+
+\begin{tabularx}{\linewidth}{|l|R|}
+\hline
+\textbf{Milstolpe} & \textbf{Datum} \\\hline \hline
+Startsida och söksida färdig & \textit{10/10}\\\hline
+Projektsida och tekniksida färdig & \textit{12/10}\\\hline
+Fungerande sökfunktion & \textit{12/10}\\\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\section{Planering}
+Planeringen kommer ske veckovis för att det ska vara lättare att läsa, men samtidigt skapa lite flexibilitet i hur arbetet utförs.
+De subsektioner som finns på fokusområden är mer detaljerade uppgifter på varje område. Uppgifterna under fokus är
+rangordnade enligt prioritet den veckan.
+
+\subsection{Vecka 39}
+\textbf{Fokus:}
+\begin{enumerate}
+    \item Projektplan. Uppskattad tid: 4h
+    \item Installationsmanual. Uppskattad tid: 1h
+\end{enumerate}
+\\
+Beräknad arbetstid: 5h\\
+Faktisk arbetstid: 6,5h\\
+
+\textbf{Hårda deadlines}:\\
+Utkast av projektplan inlämnad. 27/09-18, 23:59\\
+Första version av gemensamma installationsmanualen. 27/09-18, 23:59\\
+
+\subsection{Vecka 40}
+\textbf{Fokus:}
+\begin{enumerate}
+    \item Datalagret. Uppskattad tid: 15h
+    \begin{enumerate}
+        \item Läsa på om hur datalagret ska se ut.
+        \item Läsa på om API:n för datalagret.
+        \item Skriva första tre funktionerna i datalagret.
+        \item Skriva färdigt datalagret.
+    \end{enumerate}
+    \item Slutgiltig projektplan. Uppskattad tid: 3h
+    \begin{enumerate}
+        \item Korrigera projektplanen baserat på den feedback vi fått.
+    \end{enumerate}
+    \item Slutgiltig installationsmanual. Uppskattad tid: 2h
+    \begin{enumerate}
+        \item Korrigera installationsmanualen baserat på den feedback vi fått.
+    \end{enumerate}
+    \item Icke-fungerande prototyp av hemsidan.
+    \begin{enumerate}
+        \item Läsa om bootstrap och HTML/CSS.
+    \end{enumerate}
+\end{enumerate}
+\\
+Beräknad arbetstid: 20h\\
+Faktisk arbetstid: -h\\
+
+\textbf{Hårda deadlines}:\\
+Bidragit till installationsmanualen eller gemensamma tester. 04/10-18, 23:59\\
+Slutgiltig gemensam installationsmanual. 04/10-18, 23:59\\
+Slutgiltig projektplan inlämnad. 04/10-18, 23:59\\
+Datalagret godkänt av assistent. 04/10-18, 12:00\\\\
+
+\subsection{Vecka 41}
+\textbf{Fokus:}
+\begin{enumerate}
+    \item Fungerande prototyp av hemsidan. Uppskattad tid: 20h
+    \begin{enumerate}
+      \item HTML/CSS start-sidan.
+      \item Flask och Jinja start-sidan.
+      \item HTML/CSS projekt-sidan.
+      \item Flask och Jinja projekt-sidan.
+      \item HTML/CSS sök-sidan.
+      \item Flask och Jinja sök-sidan.
+      \item HTML/CSS teknik-sidan.
+      \item Flask och Jinja teknik-sidan.
+    \end{enumerate}
+    \item Fungerande sökfunktion. Uppskattad tid: 5h
+    \begin{enumerate}
+      \item Läsa på om hur den implementeras på hemsidan.
+      \item Implementera på hemsidan.
+    \end{enumerate}
+\end{enumerate}
+\\
+Beräknad arbetstid: 25h\\
+Faktisk arbetstid: -h\\
+
+\textbf{Mjuka deadlines}:\\
+Startsida och söksida färdig. 10/10-18, 23:59\\
+Projektsida och tekniksida färdig. 12/10-18, 23:59\\
+Fungerande prototyp av hemsidan. 12/10-18, 23:59\\
+Fungerande sökfunktion. 12/10-18, 23:59\\
+
+\subsection{Vecka 42}
+\textbf{Fokus:}
+\begin{enumerate}
+    \item Första version av systemdokumentation. Uppskattad tid: 8h
+    \begin{enumerate}
+        \item Läsa igenom krav på systemdokumentationen på kurshemsidan.
+        \item Skriva systemdokumentation enligt kraven.
+    \end{enumerate}
+    \item Portfolion tillgänglig via OpenShift. Uppskattad tid: 8h
+    \begin{enumerate}
+        \item Lära sig om OpenShift.
+        \item Lära sig hur man sätter upp en sida med OpenShift.
+        \item Få igång hemsidan med OpenShift.
+    \end{enumerate}
+    \item Systemdemonstration. Uppskattad tid: 2h
+    \begin{enumerate}
+        \item Förbereda inför systemdemonstration
+    \end{enumerate}
+\end{enumerate}
+\\
+Beräknad arbetstid: 18h\\
+Faktisk arbetstid: -h\\
+
+\textbf{Hårda deadlines}:\\
+Systemdemonstration för andra grupper. 18/10-18, 10:00\\
+Portfolio tillgänglig via OpenShift. 18/10-18, 23:59\\
+Första versionen av systemdokumentationen inlämnad. 18/10-18, 23:59\\\\
+
+\subsection{Vecka 43}
+\textbf{Fokus:}
+\begin{enumerate}
+    \item Testdokumentation. Uppskattad tid: 10h
+    \begin{enumerate}
+        \item Läsa på om vad som ska vara med i en testdokumentation.
+        \item Utför tester på hemsidan och dokumentera.
+    \end{enumerate}
+    \item Individuellt reflektionsdokument. Uppskattad tid: 8h
+    \begin{enumerate}
+        \item Läsa igenom krav på reflektionsdokumentation på kurshemsidan.
+        \item Kolla igenom dagbok för att se hur vi arbetat under projektet.
+        \item Läsa igenom rekomenderade kapitel i \textit{Coding Complete 2}.
+        \item Skriva reflektionsdokumentation enligt kraven.
+    \end{enumerate}
+    \item Slutgiltig systemdokumentation. Uppskattad tid: 2h
+    \begin{enumerate}
+        \item Korrigera systemdokumentationen baserat på den feedback vi fått.
+    \end{enumerate}
+\end{enumerate}
+\\
+Beräknad arbetstid: 20h\\
+Faktisk arbetstid: -h\\
+
+\textbf{Hårda deadlines}:\\
+Slutgiltig version av systemdokumentation inlämnad. 23/10-18, 23:59\\
+Testdokumentation inlämnad. 23/10-18, 23:59\\
+Individuellt reflektionsdokument inlämnad. 23/10-18, 23:59
+
+\end{document}

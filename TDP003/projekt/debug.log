@@ -1,0 +1,128 @@
+[2018-10-23 14:02:15,123] INFO in app: Index page loaded with no errors
+[2018-10-23 14:02:15,573] ERROR in app: A 404 occured.
+[2018-10-23 14:54:43,712] INFO in app: Current systemversion: V.1.0.1
+[2018-10-23 14:54:49,249] INFO in app: Index page loaded with no errors
+[2018-10-23 14:54:49,515] ERROR in app: A 404 occured.
+[2018-10-23 14:55:10,753] INFO in app: Index page loaded with no errors
+[2018-10-23 14:55:10,939] ERROR in app: A 404 occured.
+[2018-10-23 14:56:09,692] INFO in app: Search page loaded with no errors
+[2018-10-23 14:56:42,231] INFO in app: Project 2 loaded with no errors
+[2018-10-23 14:57:04,023] INFO in app: Techniques page loaded with no errors.
+[2018-10-23 14:58:15,216] ERROR in app: A 404 occured in project/505.
+[2018-10-23 14:59:20,317] ERROR in app: A 404 occured.
+[2018-10-23 14:59:42,015] INFO in app: Search page loaded with no errors
+[2018-10-23 14:59:44,309] ERROR in app: Exception on /list [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/e/Ip/TDP003/projekt/app.py", line 78, in list
+    ditem = json.loads(item)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 8 (char 7)
+[2018-10-23 14:59:44,319] ERROR in app: Error in database, check above for more info
+[2018-10-25 14:44:58,973] INFO in app: Current systemversion: V.1.0.1
+[2018-10-25 14:45:10,485] INFO in app: Index page loaded with no errors
+[2018-10-25 14:45:10,712] ERROR in app: A 404 occured.
+[2018-10-25 14:45:12,229] INFO in app: Search page loaded with no errors
+[2018-10-25 14:45:12,230] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/e/Ip/TDP003/projekt/app.py", line 54, in search
+    result = dl.search(database, search=search, searchfield=searchfield, sort_by=sortby, sort_order=sortorder)
+UnboundLocalError: local variable 'sortby' referenced before assignment
+[2018-10-25 14:45:12,258] ERROR in app: Error in database, check above for more info
+[2018-10-25 14:45:12,306] ERROR in app: A 404 occured.
+[2018-10-25 14:47:09,485] INFO in app: Current systemversion: V.1.0.1
+[2018-10-25 14:47:12,248] INFO in app: Search page loaded with no errors
+[2018-10-25 14:47:12,249] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/e/Ip/TDP003/projekt/app.py", line 54, in search
+    result = dl.search(database, search=search, searchfield=searchfield, sort_by=sortby, sort_order=sortorder)
+UnboundLocalError: local variable 'sortby' referenced before assignment
+[2018-10-25 14:47:12,255] ERROR in app: Error in database, check above for more info
+[2018-10-25 14:47:13,397] INFO in app: Search page loaded with no errors
+[2018-10-25 14:47:13,398] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/e/Ip/TDP003/projekt/app.py", line 54, in search
+    result = dl.search(database, search=search, searchfield=searchfield, sort_by=sortby, sort_order=sortorder)
+UnboundLocalError: local variable 'sortby' referenced before assignment
+[2018-10-25 14:47:13,402] ERROR in app: Error in database, check above for more info
+[2018-10-25 14:47:14,065] INFO in app: Techniques page loaded with no errors.
+[2018-10-25 14:47:16,898] INFO in app: Search page loaded with no errors
+[2018-10-25 14:47:16,898] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/e/Ip/TDP003/projekt/app.py", line 54, in search
+    result = dl.search(database, search=search, searchfield=searchfield, sort_by=sortby, sort_order=sortorder)
+UnboundLocalError: local variable 'sortby' referenced before assignment
+[2018-10-25 14:47:16,903] ERROR in app: Error in database, check above for more info
+[2018-10-25 14:49:39,849] INFO in app: Current systemversion: V.1.0.1
+[2018-10-25 14:49:41,971] INFO in app: Techniques page loaded with no errors.
+[2018-10-25 14:49:45,644] INFO in app: Search page loaded with no errors
+[2018-10-25 14:50:03,492] INFO in app: Search requested on jesus
+[2018-10-25 14:50:03,492] INFO in app: Search page loaded with no errors
+[2018-10-25 14:50:06,453] INFO in app: Search requested on coo
+[2018-10-25 14:50:06,453] INFO in app: Search page loaded with no errors
+[2018-10-25 14:50:08,951] INFO in app: Search requested on cool
+[2018-10-25 14:50:08,952] INFO in app: Search page loaded with no errors

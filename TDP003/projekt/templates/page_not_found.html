@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block title %}
+404
+{% endblock %}
+{% block body %}
+<div id="fourofour" class="text-center">
+  <img src="{{ url_for('static', filename='images/404text.jpg')}}" id="fourofourtext" class="mx-auto d-block"/>
+  <img src="{{ url_for('static', filename='images/404.jpg')}}" id="fourofourimg" class="rounded shadow mx-auto d-block"/>
+  <p>Oh no! It seems like the page you were looking for isn't there</p>
+
+</div>
+{% endblock %}

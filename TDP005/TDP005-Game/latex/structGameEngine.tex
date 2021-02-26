@@ -1,0 +1,33 @@
+\hypertarget{structGameEngine}{}\section{Game\+Engine Struct Reference}
+\label{structGameEngine}\index{Game\+Engine@{Game\+Engine}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGameEngine_a64c430f74d72e2745646fdbffbd97930}{Game\+Engine} ()
+\item 
+int \hyperlink{structGameEngine_afce061bad86852157c14fb6db3ba4887}{run} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structGameEngine_a64c430f74d72e2745646fdbffbd97930}\label{structGameEngine_a64c430f74d72e2745646fdbffbd97930}} 
+\index{Game\+Engine@{Game\+Engine}!Game\+Engine@{Game\+Engine}}
+\index{Game\+Engine@{Game\+Engine}!Game\+Engine@{Game\+Engine}}
+\subsubsection{\texorpdfstring{Game\+Engine()}{GameEngine()}}
+{\footnotesize\ttfamily Game\+Engine\+::\+Game\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{structGameEngine}{Game\+Engine} constructor implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structGameEngine_afce061bad86852157c14fb6db3ba4887}\label{structGameEngine_afce061bad86852157c14fb6db3ba4887}} 
+\index{Game\+Engine@{Game\+Engine}!run@{run}}
+\index{run@{run}!Game\+Engine@{Game\+Engine}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Game\+Engine\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Implementation of Game\+Engines run function. We create a new Play\+State$\ast$ called current\+\_\+game. We then use check\+\_\+win and check\+\_\+loss to check if the game is won or lost every frame. If it is either we call display\+\_\+win or display\+\_\+loss. If the game is not won or lost we call for update\+\_\+screen and update\+\_\+gravity and lastly we draw the screen with draw\+\_\+screen. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Engine.\+h\item 
+Game\+Engine.\+cc\end{DoxyCompactItemize}

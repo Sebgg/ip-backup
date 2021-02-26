@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+-------------------------------Insikter-----------------------------------------
+--------------------------------------------------------------------------------
+2019 28 Mars:
+Det är svårt att komma ihåg att använda do när man ska göra
+regler i syntax-parsern, men det kommer förhoppningsvis med tiden.
+
+2019 3 April:
+Att få "end is missing"-error när man försöker köra koden är jobbigt,
+då det kan innebära flera saker. kunde varit mer intuitivt.
+
+2019 5 April:
+Svårt att förstå att man inte måste returnera ett värde, utan att
+språket gör det automatiskt, dock väldigt häftigt.
+
+2019 6 April:
+Ruby är väldigt kraftfullt och lättläst, men ibland kan det bli långa
+rader med mycket som händer; kan vara svårt att tyda när man är ny i språket.
+
+2019 7 April:
+Känns konstigt att det finns både is_a?, kind_of? och instance_of?;
+svårt att veta vilken som ska användas när, och att is_a? och kind_of? gör
+samma sak.
+
+2019 8 April:
+Jag gillar .each do, det är ett väldigt intuitivt sätt att göra for-
+each loopar på. Enda jobbiga är att man skriver iter.each do |elem|, känns
+bättre om man skrivit iter.each |elem| do
+
+2019 13 April:
+Känns konstigt att det heter nil i Ruby, är van från c++ och python
+att skriva null.
+
+2019 14 April:
+Konstigt, men intuitivt, att använda frågetecken efter ett "frågande"
+booleskt uttryck. Glömmer hela tiden, måste komma ihåg det!
+
+2019 18 April:
+Lite konstigt att man kan skriva funktionsanrop med, eller utan
+parenteser. Kan bli förvirrande när man ser kod som t.ex.: a.forget_value "user"
+följt av c.user_assign(20). Kan ses som två olika saker, istället för två sätt
+att kalla samma sorts kod på.
+
+2019 21 April:
+Väldigt kraftfullt att kunna använda .include? för arrayer; lite liknande
+nyckelordet "in" som man skriver i Python. Det gör det lättare att leta i
+arrayer, och vissa andra datatyper, efter ett värde. Betydligt lättare än att
+behöva leta igenom med en loop.
+
+--------------------------------------------------------------------------------
+-------------------------------Framsteg-----------------------------------------
+--------------------------------------------------------------------------------
+2019 28 Mars:
+Idag gjorde vi en Print klass samt Tokens som matchar Print. Vi kan nu skriva ut
+tecken eller ord. Men tyvärr får inte våra tecken någon sorts klass. Det vi
+kommer fokusera på framöver är att fixa klasser till olika datatyper.
+
+2019 3 April:
+Idag gjorde vi basklasser till Strängar, Integers och Floats. Det verkar funka
+som det ska. När vi skriver ut en siffra med print blir det ett Integer objekt
+som skrivs ut istället för en sträng. Det vi ska fixa framöver är statement lists.
+
+2019 5 April:
+Idag började vi göra statement lists men vi blev inte helt klara. Vi kan
+fortfarande bara göra en sats åt gången i filen som skall parsas. Vi har en bug
+som gör att parsern crashar så fort vi skriver på 2 olika rader.
+
+2019 6 April:
+Idag fixade vi statement lists. Detta gjorde vi igenom att göra en global
+statement list där alla statements läggs in. Nu kan vi skriva på flera rader.
+Nästa sak vi vill fixa är variabler.
+
+2019 7 April:
+Idag började vi på variabler men blev tyvär inte helt färdiga. Vi vet inte
+riktigt hur vi ska få ut våra variabler igen efter att vi har sparat den i vårt
+scope. Scopet består av en array med dictionaries inuti. Vi tänker att vi
+ska göra något sort klass som hanterar detta.
+
+2019 8 April:
+Idag har vi blivit klara med variabler. Vi kan spara ett variabelnamn till ett
+givet värde. Vi kan också sedan skriva ut vår variabel och få ut rätt värde.
+För att göra detta var vi tvungna att göra en typ av datatyp som kollade om det
+vi skrev ut fanns med som variabel i vårt scope. Nästa problem vi vill tackla
+är If satser.
+
+2019 13 April:
+Idag har börjat med if satser men vi blev tyvär fungerar den inte som den ska.
+Vi vet inte riktigt vad felet är. Vi antar att det är ett syntax fel eller
+något i den stilen. If fungerar men inte else if eller else.
+
+2019 14 April:
+Idag löste vi if satser same else if och else. Felet var ordningen som vi
+matchade else if och else. Vi matchade en vanlig if sats överst vilket gjorde
+att parsern gjorde om else if och else till strängar.
+
+2019 18 April:
+Idag började vi på loopar. Vi har väldigt svårt att få looparna att ärva ett
+scope. Vi är inte helt säkra på hur vi ska göra detta. Just nu kan vi göra
+lätta loopar med ett förbestämt antal iterationer. Vår ide om hur vi ska lösa
+detta är att göra en funktion som söker i överliggande scopes för att hitta en
+variabel.
+
+2019 21 April:
+Idag gjorde vi klart Loopar. Vi kan nu göra loopar över en range, från logiska
+vilkor, och igenom att säga hur många gånger loopen ska iterera. Vi löste detta
+med en funktion för att leta igenom scopesen. Vi löste logiska loopar genom att
+nästan kopiera vår if klass.

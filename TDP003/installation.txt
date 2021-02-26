@@ -1,0 +1,10 @@
+virtualenv /usr/bin/python3.4 venv
+
+. venv/bin/activate -> (venv) <liuid>@parlomba:projekt$
+
+pip install flask i venv
+
+export FLASK_APP=app.py -> inga error
+
+export FLASK_ENV=development -> inga error -> i app.py lägg till "debug=True"
+i app.run()

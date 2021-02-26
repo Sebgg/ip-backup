@@ -1,0 +1,66 @@
+/*************Types****************/
+html {
+  font-size: calc(1em + 1vh);
+}
+/*************Classes****************/
+.twinput {
+  background-color: khaki;
+  margin-left: 17vw;
+  margin-right: 17vw;
+  height: 15vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  border-radius: 2vw;
+}
+
+.twidlabel {
+  font-size: 1.3em;
+}
+
+.twidls {
+  background-color: inherit;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+.twidl {
+  border-radius: 2vw;
+  background-color: hotpink;
+  font-size: inherit;
+  text-align: center;
+  padding: 1vh 3vw 1vh 3vw;
+  margin: 1vw;
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* Opera <7 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;      /* IE */
+}
+
+.read {
+  border-radius: 2vw;
+  background-color: deeppink;
+  font-size: inherit;
+  text-align: center;
+  padding: 1vh 3vw 1vh 3vw;
+  margin: 1vw;
+  opacity: 0.3;
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* Opera <7 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;      /* IE */
+}
+
+input.custom {
+  size: calc(1em + 1vh);
+  font-size: inherit;
+}
+/*************Ids****************/
+#twibutt {
+  font-size: inherit;
+}

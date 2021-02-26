@@ -1,0 +1,141 @@
+\hypertarget{classCharacter}{}\section{Character Class Reference}
+\label{classCharacter}\index{Character@{Character}}
+
+
+Inheritance diagram for Character\+:
+% FIG 0
+
+
+Collaboration diagram for Character\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCharacter_af937c759ea30a7e387c31c23374dd5a6}{Character} (double, int, std\+::string)
+\item 
+\hyperlink{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}{$\sim$\+Character} ()
+\item 
+\mbox{\Hypertarget{classCharacter_a5c7b9245df1adca76494627b220efb42}\label{classCharacter_a5c7b9245df1adca76494627b220efb42}} 
+bool {\bfseries is\+\_\+alive} () const
+\item 
+\mbox{\Hypertarget{classCharacter_ae2a0ee329e8839951010a2cd67faf1cd}\label{classCharacter_ae2a0ee329e8839951010a2cd67faf1cd}} 
+virtual void {\bfseries resurrect} ()
+\item 
+\mbox{\Hypertarget{classCharacter_a9125a0d4c612c3a26c18809e345a6c29}\label{classCharacter_a9125a0d4c612c3a26c18809e345a6c29}} 
+virtual void {\bfseries shoot} (std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&)=0
+\item 
+void \hyperlink{classCharacter_acb5c904503c7e446ac508261946c530e}{take\+\_\+damage} (double const)
+\item 
+void \hyperlink{classCharacter_a34b7cd24b7f3ce54f2f99cf9b059a05d}{gravity} (float const)
+\item 
+\mbox{\Hypertarget{classCharacter_ac7201d72eb24bc851af732579a906be2}\label{classCharacter_ac7201d72eb24bc851af732579a906be2}} 
+void {\bfseries set\+\_\+falling} (bool const \&)
+\item 
+\mbox{\Hypertarget{classCharacter_a0b6a802d4087a061163a15d610e53a50}\label{classCharacter_a0b6a802d4087a061163a15d610e53a50}} 
+void {\bfseries set\+\_\+fall\+\_\+speed} (int)
+\item 
+\mbox{\Hypertarget{classCharacter_abb4eacf79f81ef71b2724338fbc5b6f6}\label{classCharacter_abb4eacf79f81ef71b2724338fbc5b6f6}} 
+int {\bfseries get\+\_\+fall\+\_\+speed} () const
+\item 
+\mbox{\Hypertarget{classCharacter_aa92749e9ab36972f63396f66829c6331}\label{classCharacter_aa92749e9ab36972f63396f66829c6331}} 
+void {\bfseries set\+\_\+on\+\_\+platform} (bool const)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_a1268d0c5fb2c3104cb4d22fef09d9529}\label{classCharacter_a1268d0c5fb2c3104cb4d22fef09d9529}} 
+double {\bfseries get\+\_\+health\+\_\+points} () const
+\item 
+\mbox{\Hypertarget{classCharacter_ae64146ff1a06035904b44364e9851767}\label{classCharacter_ae64146ff1a06035904b44364e9851767}} 
+int {\bfseries get\+\_\+damage\+\_\+modifier} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCharacter_aeaed78cd2c9aeacaa3c86ab3e329819b}{falling} \{\}
+\item 
+bool \hyperlink{classCharacter_a5706469de2945e3ce0a39ff1df4c50d9}{on\+\_\+platform} \{\}
+\item 
+double \hyperlink{classCharacter_a8b8070c769a40358a893340513b0b651}{health\+\_\+points} \{\}
+\item 
+int \hyperlink{classCharacter_adfb4e2ac159c383b260a458b70852c06}{damage\+\_\+modifier} \{\}
+\item 
+int \hyperlink{classCharacter_a7a0c774f3743df3c4025820f7da91541}{fall\+\_\+speed} \{\}
+\item 
+sf\+::\+Clock \hyperlink{classCharacter_a93214fb7df7c0b20366a50dacdd03a49}{shoot\+\_\+clock} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCharacter_af937c759ea30a7e387c31c23374dd5a6}\label{classCharacter_af937c759ea30a7e387c31c23374dd5a6}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{double}]{health\+\_\+points = {\ttfamily 0},  }\item[{int}]{damage\+\_\+modifier = {\ttfamily 0},  }\item[{std\+::string}]{texture\+\_\+filename = {\ttfamily \char`\"{}static/default.png\char`\"{}} }\end{DoxyParamCaption})}
+
+\hyperlink{classCharacter}{Character} constructor implementation. \mbox{\Hypertarget{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}\label{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}} 
+\index{Character@{Character}!````~Character@{$\sim$\+Character}}
+\index{````~Character@{$\sim$\+Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{$\sim$\+Character()}{~Character()}}
+{\footnotesize\ttfamily Character\+::$\sim$\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classCharacter}{Character} destructor implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCharacter_a34b7cd24b7f3ce54f2f99cf9b059a05d}\label{classCharacter_a34b7cd24b7f3ce54f2f99cf9b059a05d}} 
+\index{Character@{Character}!gravity@{gravity}}
+\index{gravity@{gravity}!Character@{Character}}
+\subsubsection{\texorpdfstring{gravity()}{gravity()}}
+{\footnotesize\ttfamily void Character\+::gravity (\begin{DoxyParamCaption}\item[{float const}]{height }\end{DoxyParamCaption})}
+
+Checks if character is not standing on the ground or a platform. If it\textquotesingle{}s not standing on the ground or platform we want to move it down to simulate gravity. \mbox{\Hypertarget{classCharacter_acb5c904503c7e446ac508261946c530e}\label{classCharacter_acb5c904503c7e446ac508261946c530e}} 
+\index{Character@{Character}!take\+\_\+damage@{take\+\_\+damage}}
+\index{take\+\_\+damage@{take\+\_\+damage}!Character@{Character}}
+\subsubsection{\texorpdfstring{take\+\_\+damage()}{take\_damage()}}
+{\footnotesize\ttfamily void Character\+::take\+\_\+damage (\begin{DoxyParamCaption}\item[{double const}]{damage }\end{DoxyParamCaption})}
+
+Used to remove health\+\_\+points from a character. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCharacter_adfb4e2ac159c383b260a458b70852c06}\label{classCharacter_adfb4e2ac159c383b260a458b70852c06}} 
+\index{Character@{Character}!damage\+\_\+modifier@{damage\+\_\+modifier}}
+\index{damage\+\_\+modifier@{damage\+\_\+modifier}!Character@{Character}}
+\subsubsection{\texorpdfstring{damage\+\_\+modifier}{damage\_modifier}}
+{\footnotesize\ttfamily int Character\+::damage\+\_\+modifier \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores damage output of projectiles. \mbox{\Hypertarget{classCharacter_a7a0c774f3743df3c4025820f7da91541}\label{classCharacter_a7a0c774f3743df3c4025820f7da91541}} 
+\index{Character@{Character}!fall\+\_\+speed@{fall\+\_\+speed}}
+\index{fall\+\_\+speed@{fall\+\_\+speed}!Character@{Character}}
+\subsubsection{\texorpdfstring{fall\+\_\+speed}{fall\_speed}}
+{\footnotesize\ttfamily int Character\+::fall\+\_\+speed \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores how fast character is falling. \mbox{\Hypertarget{classCharacter_aeaed78cd2c9aeacaa3c86ab3e329819b}\label{classCharacter_aeaed78cd2c9aeacaa3c86ab3e329819b}} 
+\index{Character@{Character}!falling@{falling}}
+\index{falling@{falling}!Character@{Character}}
+\subsubsection{\texorpdfstring{falling}{falling}}
+{\footnotesize\ttfamily bool Character\+::falling \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores if character is falling or not. \mbox{\Hypertarget{classCharacter_a8b8070c769a40358a893340513b0b651}\label{classCharacter_a8b8070c769a40358a893340513b0b651}} 
+\index{Character@{Character}!health\+\_\+points@{health\+\_\+points}}
+\index{health\+\_\+points@{health\+\_\+points}!Character@{Character}}
+\subsubsection{\texorpdfstring{health\+\_\+points}{health\_points}}
+{\footnotesize\ttfamily double Character\+::health\+\_\+points \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores health\+\_\+points. \mbox{\Hypertarget{classCharacter_a5706469de2945e3ce0a39ff1df4c50d9}\label{classCharacter_a5706469de2945e3ce0a39ff1df4c50d9}} 
+\index{Character@{Character}!on\+\_\+platform@{on\+\_\+platform}}
+\index{on\+\_\+platform@{on\+\_\+platform}!Character@{Character}}
+\subsubsection{\texorpdfstring{on\+\_\+platform}{on\_platform}}
+{\footnotesize\ttfamily bool Character\+::on\+\_\+platform \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores if character is on platform. \mbox{\Hypertarget{classCharacter_a93214fb7df7c0b20366a50dacdd03a49}\label{classCharacter_a93214fb7df7c0b20366a50dacdd03a49}} 
+\index{Character@{Character}!shoot\+\_\+clock@{shoot\+\_\+clock}}
+\index{shoot\+\_\+clock@{shoot\+\_\+clock}!Character@{Character}}
+\subsubsection{\texorpdfstring{shoot\+\_\+clock}{shoot\_clock}}
+{\footnotesize\ttfamily sf\+::\+Clock Character\+::shoot\+\_\+clock \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clock for buffering shots. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Character.\+h\item 
+Character.\+cc\end{DoxyCompactItemize}

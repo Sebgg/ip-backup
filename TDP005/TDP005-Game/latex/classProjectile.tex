@@ -1,0 +1,112 @@
+\hypertarget{classProjectile}{}\section{Projectile Class Reference}
+\label{classProjectile}\index{Projectile@{Projectile}}
+
+
+Inheritance diagram for Projectile\+:
+% FIG 0
+
+
+Collaboration diagram for Projectile\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjectile_a2405b8d7efa8c98ca978e31aa76c48b3}{Projectile} (int const, float const, float const, float const, float const, double const)
+\item 
+void \hyperlink{classProjectile_aa503768163cf6144328203f56d3866c1}{render} (sf\+::\+Render\+Window \&) override
+\item 
+void \hyperlink{classProjectile_a4aaeec5eb44bb09058afc96d2a9b5d72}{update} (std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&, \hyperlink{classObject}{Object} $\ast$, \hyperlink{classObject}{Object} $\ast$) override
+\item 
+\mbox{\Hypertarget{classProjectile_af7f69a3adff68a71b760afa4a692d756}\label{classProjectile_af7f69a3adff68a71b760afa4a692d756}} 
+float {\bfseries get\+\_\+height} () const
+\item 
+\mbox{\Hypertarget{classProjectile_a729dbae4880a031705692b7ef6bcc401}\label{classProjectile_a729dbae4880a031705692b7ef6bcc401}} 
+float {\bfseries get\+\_\+width} () const
+\item 
+int \hyperlink{classProjectile_a90a5fdd713db14b83732d9cfc9a0479e}{invert\+\_\+direction} ()
+\item 
+\mbox{\Hypertarget{classProjectile_a4be2dc6482bddd1521c9d7937085db6c}\label{classProjectile_a4be2dc6482bddd1521c9d7937085db6c}} 
+int {\bfseries get\+\_\+direction} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classProjectile_a5d30e0f7e8033f0d72fe759a8dd02b30}{direction} \{\}
+\item 
+double const \hyperlink{classProjectile_a6f2bfbfa611704a2fbc031b7969d6afb}{damage\+\_\+modifier} \{\}
+\item 
+float const \hyperlink{classProjectile_a4ea221974935c400c17d2acbee33b0ee}{height} \{\}
+\item 
+float const \hyperlink{classProjectile_a526dd3f231b015203325d5d7a2e89159}{width} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProjectile_a2405b8d7efa8c98ca978e31aa76c48b3}\label{classProjectile_a2405b8d7efa8c98ca978e31aa76c48b3}} 
+\index{Projectile@{Projectile}!Projectile@{Projectile}}
+\index{Projectile@{Projectile}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{Projectile()}{Projectile()}}
+{\footnotesize\ttfamily Projectile\+::\+Projectile (\begin{DoxyParamCaption}\item[{int const}]{direction,  }\item[{float const}]{width,  }\item[{float const}]{height,  }\item[{float const}]{x,  }\item[{float const}]{y,  }\item[{double const}]{damage\+\_\+modifier }\end{DoxyParamCaption})}
+
+\hyperlink{classProjectile}{Projectile} constructor implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProjectile_a90a5fdd713db14b83732d9cfc9a0479e}\label{classProjectile_a90a5fdd713db14b83732d9cfc9a0479e}} 
+\index{Projectile@{Projectile}!invert\+\_\+direction@{invert\+\_\+direction}}
+\index{invert\+\_\+direction@{invert\+\_\+direction}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{invert\+\_\+direction()}{invert\_direction()}}
+{\footnotesize\ttfamily int Projectile\+::invert\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inverts the direction the projectile is going in, and flips the sprite. \mbox{\Hypertarget{classProjectile_aa503768163cf6144328203f56d3866c1}\label{classProjectile_aa503768163cf6144328203f56d3866c1}} 
+\index{Projectile@{Projectile}!render@{render}}
+\index{render@{render}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Projectile\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{drawto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draws the projectile on the screen. 
+
+Implements \hyperlink{classObject}{Object}.
+
+\mbox{\Hypertarget{classProjectile_a4aaeec5eb44bb09058afc96d2a9b5d72}\label{classProjectile_a4aaeec5eb44bb09058afc96d2a9b5d72}} 
+\index{Projectile@{Projectile}!update@{update}}
+\index{update@{update}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Projectile\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classObject}{Object} $\ast$$>$ \&}]{objects,  }\item[{\hyperlink{classObject}{Object} $\ast$}]{player,  }\item[{\hyperlink{classObject}{Object} $\ast$}]{boss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\hyperlink{classProjectile}{Projectile}\textquotesingle{}s implementation of update. Despawns this if it hits the player or boss, or goes out of bounds. 
+
+Implements \hyperlink{classObject}{Object}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classProjectile_a6f2bfbfa611704a2fbc031b7969d6afb}\label{classProjectile_a6f2bfbfa611704a2fbc031b7969d6afb}} 
+\index{Projectile@{Projectile}!damage\+\_\+modifier@{damage\+\_\+modifier}}
+\index{damage\+\_\+modifier@{damage\+\_\+modifier}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{damage\+\_\+modifier}{damage\_modifier}}
+{\footnotesize\ttfamily double const Projectile\+::damage\+\_\+modifier \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores how much damage the projectile does. \mbox{\Hypertarget{classProjectile_a5d30e0f7e8033f0d72fe759a8dd02b30}\label{classProjectile_a5d30e0f7e8033f0d72fe759a8dd02b30}} 
+\index{Projectile@{Projectile}!direction@{direction}}
+\index{direction@{direction}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily int Projectile\+::direction \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores if the projectile goes left or right. \mbox{\Hypertarget{classProjectile_a4ea221974935c400c17d2acbee33b0ee}\label{classProjectile_a4ea221974935c400c17d2acbee33b0ee}} 
+\index{Projectile@{Projectile}!height@{height}}
+\index{height@{height}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float const Projectile\+::height \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the height of the projectile. \mbox{\Hypertarget{classProjectile_a526dd3f231b015203325d5d7a2e89159}\label{classProjectile_a526dd3f231b015203325d5d7a2e89159}} 
+\index{Projectile@{Projectile}!width@{width}}
+\index{width@{width}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily float const Projectile\+::width \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the width of the projectile. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Projectile.\+h\item 
+Projectile.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+#ifndef GAMESTATE_H
+#define GAMESTATE_H
+
+struct GameState
+{
+  GameState() = default;
+  virtual ~GameState() = default;
+};
+#endif //GAMESTATE_H

@@ -1,0 +1,146 @@
+\begin{theindex}
+
+  \item {$\sim$\+Character}
+    \subitem {Character}, \hyperpage{8}
+  \item {$\sim$\+Play\+State}
+    \subitem {Play\+State}, \hyperpage{15}
+
+  \indexspace
+
+  \item {Boss}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Character}, \hyperpage{7}
+    \subitem {$\sim$\+Character}, \hyperpage{8}
+    \subitem {Character}, \hyperpage{8}
+    \subitem {damage\+\_\+modifier}, \hyperpage{9}
+    \subitem {fall\+\_\+speed}, \hyperpage{9}
+    \subitem {falling}, \hyperpage{9}
+    \subitem {gravity}, \hyperpage{8}
+    \subitem {health\+\_\+points}, \hyperpage{9}
+    \subitem {on\+\_\+platform}, \hyperpage{9}
+    \subitem {shoot\+\_\+clock}, \hyperpage{9}
+    \subitem {take\+\_\+damage}, \hyperpage{8}
+  \item {check\+\_\+parry}
+    \subitem {Player}, \hyperpage{13}
+
+  \indexspace
+
+  \item {damage\+\_\+modifier}
+    \subitem {Character}, \hyperpage{9}
+    \subitem {Projectile}, \hyperpage{17}
+  \item {direction}
+    \subitem {Projectile}, \hyperpage{17}
+  \item {display\+\_\+loss}
+    \subitem {Play\+State}, \hyperpage{15}
+  \item {display\+\_\+win}
+    \subitem {Play\+State}, \hyperpage{15}
+  \item {draw\+\_\+screen}
+    \subitem {Play\+State}, \hyperpage{15}
+
+  \indexspace
+
+  \item {fall\+\_\+speed}
+    \subitem {Character}, \hyperpage{9}
+  \item {falling}
+    \subitem {Character}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Game\+Engine}, \hyperpage{10}
+    \subitem {Game\+Engine}, \hyperpage{10}
+    \subitem {run}, \hyperpage{10}
+  \item {gravity}
+    \subitem {Character}, \hyperpage{8}
+
+  \indexspace
+
+  \item {health\+\_\+points}
+    \subitem {Character}, \hyperpage{9}
+  \item {height}
+    \subitem {Projectile}, \hyperpage{17}
+
+  \indexspace
+
+  \item {invert\+\_\+direction}
+    \subitem {Projectile}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Object}, \hyperpage{10}
+    \subitem {Object}, \hyperpage{11}
+    \subitem {texture}, \hyperpage{11}
+  \item {on\+\_\+platform}
+    \subitem {Character}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Platform}, \hyperpage{11}
+    \subitem {Platform}, \hyperpage{12}
+    \subitem {render}, \hyperpage{12}
+    \subitem {update}, \hyperpage{12}
+  \item {Play\+State}, \hyperpage{14}
+    \subitem {$\sim$\+Play\+State}, \hyperpage{15}
+    \subitem {display\+\_\+loss}, \hyperpage{15}
+    \subitem {display\+\_\+win}, \hyperpage{15}
+    \subitem {draw\+\_\+screen}, \hyperpage{15}
+    \subitem {Play\+State}, \hyperpage{14}
+    \subitem {update\+\_\+gravity}, \hyperpage{15}
+    \subitem {update\+\_\+screen}, \hyperpage{15}
+  \item {Player}, \hyperpage{13}
+    \subitem {check\+\_\+parry}, \hyperpage{13}
+    \subitem {Player}, \hyperpage{13}
+    \subitem {render}, \hyperpage{13}
+    \subitem {shoot}, \hyperpage{13}
+    \subitem {update}, \hyperpage{14}
+  \item {Projectile}, \hyperpage{16}
+    \subitem {damage\+\_\+modifier}, \hyperpage{17}
+    \subitem {direction}, \hyperpage{17}
+    \subitem {height}, \hyperpage{17}
+    \subitem {invert\+\_\+direction}, \hyperpage{17}
+    \subitem {Projectile}, \hyperpage{16}
+    \subitem {render}, \hyperpage{17}
+    \subitem {update}, \hyperpage{17}
+    \subitem {width}, \hyperpage{18}
+
+  \indexspace
+
+  \item {render}
+    \subitem {Platform}, \hyperpage{12}
+    \subitem {Player}, \hyperpage{13}
+    \subitem {Projectile}, \hyperpage{17}
+  \item {run}
+    \subitem {Game\+Engine}, \hyperpage{10}
+
+  \indexspace
+
+  \item {shoot}
+    \subitem {Player}, \hyperpage{13}
+  \item {shoot\+\_\+clock}
+    \subitem {Character}, \hyperpage{9}
+
+  \indexspace
+
+  \item {take\+\_\+damage}
+    \subitem {Character}, \hyperpage{8}
+  \item {texture}
+    \subitem {Object}, \hyperpage{11}
+
+  \indexspace
+
+  \item {update}
+    \subitem {Platform}, \hyperpage{12}
+    \subitem {Player}, \hyperpage{14}
+    \subitem {Projectile}, \hyperpage{17}
+  \item {update\+\_\+gravity}
+    \subitem {Play\+State}, \hyperpage{15}
+  \item {update\+\_\+screen}
+    \subitem {Play\+State}, \hyperpage{15}
+
+  \indexspace
+
+  \item {width}
+    \subitem {Projectile}, \hyperpage{18}
+
+\end{theindex}

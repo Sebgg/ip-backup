@@ -1,0 +1,19 @@
+a = 5
+b = "hej"
+c = true
+
+//a = "eee"
+
+println a
+
+if a == 5
+{
+println "stammer"}
+
+func write(x)
+{println x}
+
+for x = 0;x x < 10 x = x +1
+{
+    write(x)
+}

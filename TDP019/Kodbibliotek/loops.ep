@@ -1,0 +1,18 @@
+define loops(y){
+  Loop 10 times{
+    Print("Hej")
+  }
+
+  Loop x from 1 to 10{
+    Print(x)
+  }
+
+
+  a = true
+  Loop while a is equal to true{
+    a = false
+    Print("quit")
+  }
+}
+
+loops(10)

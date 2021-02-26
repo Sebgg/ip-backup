@@ -1,0 +1,42 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega16A"</DEVICE>
+ <WORKING_DIR>X:\Documents\tsiu02\Lab3\Lab3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m16Adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>X:\Documents\tsiu02\Lab3\Lab3\Debug/Lab3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab3.map</FILE>
+  <FILE>Lab3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <TIME><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>10</LINE></TIME>
+  <POS><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>11</LINE></POS>
+  <START><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>24</LINE></START>
+  <BCD><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>57</LINE></BCD>
+  <MUX><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>91</LINE></MUX>
+  <INIT_IO><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>29</LINE></INIT_IO>
+  <CLEAR_SRAM><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>36</LINE></CLEAR_SRAM>
+  <INIT_INTE><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>41</LINE></INIT_INTE>
+  <WAIT_FOR_I><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>51</LINE></WAIT_FOR_I>
+  <BCD_NINE><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>65</LINE></BCD_NINE>
+  <BCD_END><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>83</LINE></BCD_END>
+  <BCD_FIVE><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>73</LINE></BCD_FIVE>
+  <BTAB><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>133</LINE></BTAB>
+  <LOAD_POS><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>114</LINE></LOAD_POS>
+  <GET_DIGIT><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>117</LINE></GET_DIGIT>
+  <RETURN_FROM_MUX><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>106</LINE></RETURN_FROM_MUX>
+  <SHOW_DIGIT><FILE>X:\Documents\tsiu02\Lab3\Lab3\Lab3.asm</FILE><LINE>126</LINE></SHOW_DIGIT>
+ </LABELS>
+</ASSEMBLER_INFO>

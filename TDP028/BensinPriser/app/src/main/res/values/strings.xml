@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Paetrol</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="swipe_left_for_register">Swipe left to register</string>
+    <string name="login_tag">Login for benefits!</string>
+    <string name="swipe_right_for_login">Swipe right to login</string>
+    <string name="register">Register</string>
+    <string name="your_name">Your name</string>
+    <string name="re_type_password">Re type password</string>
+    <string name="login_btn">Login</string>
+    <string name="logout_btn">Logout</string>
+    <string name="map_btn">Map</string>
+    <string name="not_logged_in">Not logged in</string>
+    <string name="menu">Menu</string>
+    <string name="to_user_btn">My page</string>
+    <string name="gas_station">Station list</string>
+
+    <string name="user_login_btn">Login</string>
+    <string name="user_logout_btn">Logout</string>
+    <string name="location_rationale">Paetrol needs access to location to function properly</string>
+    <string name="anonymous_login">Anonymous login</string>
+    <string name="login_anon_fail">Anonymous login failed</string>
+    <string name="login_failed">Registration failed, please try again!</string>
+    <string name="login_google_success">Logged in with google!</string>
+    <string name="welcome_user">Welcome back %1$s</string>
+    <string name="welcome_string_anon">Welcome anonymous user</string>
+    <string name="permission_granted_location">Location permission granted</string>
+    <string name="log_out_success">Successfully logged out</string>
+    <string name="double_back_to_exit">Press back again to exit app!</string>
+
+    <string name="register_tag">Register for benefits</string>
+    <string name="no_contributions_yet">No contributions yet!</string>
+    <string name="user_name">Username: %1$s</string>
+    <string name="member_since">Member since %1$s</string>
+    <string name="contribution_count">Contributed %1$s times</string>
+    <string name="anonymous_user_name">Anonymous user</string>
+    <string name="no_track_contributions">Contributions not tracked for anonymous users!</string>
+    <string name="user_name_hint">Username</string>
+    <string name="user_image_placeholder">UserImage Placeholder</string>
+    <string name="fill_all_fields_warning">Need to fill out all fields!</string>
+    <string name="password_match_warning">Passwords does not match!</string>
+
+    <string name="permission_internet_granted">Internet permission granted!</string>
+    <string name="invalid_email_or_pword_login">Email or password invalid, please try again!</string>
+    <string name="login_google_failed">Google sign-in failed!</string>
+    <string name="return_to_current_location">Returning to current location.</string>
+    <string name="no_location_recorded">No location recorded.</string>
+</resources>

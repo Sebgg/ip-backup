@@ -1,0 +1,6 @@
+define func(y){
+  Print(y)
+}
+Loop x from 1 to 10{
+  func(x)
+}

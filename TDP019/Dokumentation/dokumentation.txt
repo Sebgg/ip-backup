@@ -1,0 +1,14 @@
+1. Inledning
+" " är ett ganska simpellt programmeringsspråk som har tagit de bästa delarna (enligt oss) från flera andra språk som c++, Python, och ruby. Detta språk gjordes under andra terminen på IP-programmet vid Linköpings universitet tillhör kursen TDP019 Projekt: Datorspråk.
+
+1.1 Syfte
+Syftet med denna kursen och projektet vi utförde i den var att vi skulle fördjupa oss i hur språk fungerar samt är uppgbyggda på en lite djupare nivå.
+
+
+1.2 Introduktion
+Som nämnt lite i inledningen så var vår plan med detta språk var att kompinera dom enligt oss bästa funktionella delarna från flera olika språk. Samtidigt vill vi att språket skall vara relativt nybörjarvänligt och vi har därför gjort mycket syntax som är väldigt likt vanligt skriftspråk.
+
+1.3 Målgrupp
+Målgruppen till vårt språk är nybörjare som och vi har då egentligen ingen specifik demografi som språket är riktat åt.
+
+2. Användarhandledning

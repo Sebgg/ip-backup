@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Revisionshistorik}{}% 1
+\BOOKMARK [1][-]{section.2}{Spelidé}{}% 2
+\BOOKMARK [1][-]{section.3}{Målgrupp}{}% 3
+\BOOKMARK [1][-]{section.4}{Spelupplevelse}{}% 4
+\BOOKMARK [1][-]{section.5}{Spelmekanik}{}% 5
+\BOOKMARK [1][-]{section.6}{Regler}{}% 6
+\BOOKMARK [2][-]{subsection.6.1}{Spelplan}{section.6}% 7
+\BOOKMARK [2][-]{subsection.6.2}{Spelare}{section.6}% 8
+\BOOKMARK [2][-]{subsection.6.3}{Vapen\040och\040health\040bar}{section.6}% 9
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Projektiler}{subsection.6.3}% 10
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Parering}{subsection.6.3}% 11
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Health\040bar}{subsection.6.3}% 12
+\BOOKMARK [2][-]{subsection.6.4}{Fiendetyper}{section.6}% 13
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Boss}{subsection.6.4}% 14
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Summons}{subsection.6.4}% 15
+\BOOKMARK [1][-]{section.7}{Visualisering}{}% 16
+\BOOKMARK [1][-]{section.8}{Kravformulering}{}% 17
+\BOOKMARK [2][-]{subsection.8.1}{Krav}{section.8}% 18
+\BOOKMARK [2][-]{subsection.8.2}{Tilläggs-krav}{section.8}% 19
+\BOOKMARK [1][-]{section.9}{Kravuppfyllelse}{}% 20
+\BOOKMARK [2][-]{subsection.9.1}{Spelet ska simulera en värld som innehåller olika typer av objekt. Objekten ska ha olika beteenden och röra sig i världen och agera på olika sätt när de möter andra objekt.}{section.9}% 21
+\BOOKMARK [2][-]{subsection.9.2}{Det måste finnas minst tre olika typer av objekt och det ska finnas flera instanser av minst två av dessa. T.ex ett spelarobjekt och många instanser av två olika slags fiendeobjekt.}{section.9}% 22
+\BOOKMARK [2][-]{subsection.9.3}{Ett beteende som måste finnas med är att figurerna ska röra sig över skärmen. Rörelsen kan följa ett mönster och/eller vara slumpmässig. Minst ett objekt, utöver spelaren ska ha någon typ av rörelse.}{section.9}% 23
+\BOOKMARK [2][-]{subsection.9.4}{En figur ska styras av spelaren, antingen med tangentbordet eller med musen. Du kan även göra ett spel där man spelar två stycken genom att dela på tangentbordet \(varje spelare använder olika tangenter\). Då styr man var sin figur.}{section.9}% 24
+\BOOKMARK [2][-]{subsection.9.5}{Grafiken ska vara tvådimensionell.}{section.9}% 25
+\BOOKMARK [2][-]{subsection.9.6}{Världen \(spelplanen\) kan antas vara lika stor som fönstret \(du kan göra en större spelplan med scrollning, men det blir lite krångligare\).}{section.9}% 26
+\BOOKMARK [2][-]{subsection.9.7}{Det ska finnas kollisionshantering, det vill säga, det ska hända olika saker när objekten möter varandra, de ska påverka varandra på något sätt. T.ex kan ett av objekten tas bort, eller så kan objekten förvandlas på något sätt, eller så kan ett nytt objekt skapas. \(Ett exempel på att skapa/ta bort objekt är när man i Space Invaders trycker på skjuta-knappen, t.ex en musknapp, då avfyras ett laserskott och skottet blir då en ny figur som skapas och placeras i världen, på en position vid laserkanonens mynning. Skottet rör sig framåt \(uppåt\) och om det träffar ett fiendeskepp tas både skottet och skeppet bort, om skottet kommer utanför spelplanen, dvs det missar, tas det endast bort.\)}{section.9}% 27
+\BOOKMARK [2][-]{subsection.9.8}{Det ska vara enkelt att lägga till eller ändra banor i spelet. Detta kan exempelvis lösas genom att läsa in banor från en fil \(lite som i Sokoban-labben i TDP002\), eller genom att ha funktioner i programkoden som bygger upp en datastruktur som definierar en bana.}{section.9}% 28
+\BOOKMARK [2][-]{subsection.9.9}{Spelet måste upplevas som ett sammanhängande spel som går att spela!}{section.9}% 29

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+	<title>Slutuppgift</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="body">
+		<header>
+			<p>Slutuppgiften i TDP001</p>
+		</header>
+		<ul>
+  		<li><a href="index.html">Startsida</a></li>
+			<li><a href="#sl1">2.1</a></li>
+      <li><a href="#sl2">2.2</a></li>
+      <li><a href="#sl3">2.3</a></li>
+      <li><a href="#sl4">2.4</a></li>
+      <li><a href="#sl5">2.5</a></li>
+      <li><a href="#sl6">2.6</a></li>
+		</ul>
+    <div class="inlägg" id="sl1">
+      <h1>2.1:</h1>
+      <h3>1:</h3>
+      <h4>mkdir -p TDP004/lab1</h4>
+      <b>mkdir</b> skapar directory, <b>-p</b> säger att den ska skapa ett parent directory om det inte finns
+      <h3>2:</h3>
+      <h4>cd TDP004, touch README.md</h4>
+      skapar en fil <i>README.md</i> utan att göra något med den, öppna i en editor och skriv något, med hjälp av <b>&lt;editornamn&gt; README.md</b>
+      <h3>3:</h3>
+      Gå in på gitlab.ida.liu.se, skapa ett repository med knappen "New repository", namnge och tryck skapa.
+      <h3>4:</h3>
+      Stå i rootmappen <i>TDP004</i>, skriv <b>git init</b>, <bgit remote add origin git@gitlab.ida.liu.se:&lt;liuid&gt;/TDP004</b>.
+      <h3>5:</h3>
+      <h4>Git add .</h4> <h4>git commit -m 'Initial commit'</h4> <h4>git push -u origin master</h4>
+      Mer info finns <a href="index.html#in1" id="inlinelink">här</a>
+    </div>
+    <div class="inlägg" id="sl2">
+      <h1>2.2:</h1>
+      <h3>1:</h3>
+      <h4>ssh -X &lt;liuid&gt;@remote-und.ida.liu.se</h4>
+      skriv in lösenord, så får du tillgång till ssh-servern.
+      <h3>2:</h3>
+      <h4>mkdir TDP004</h4><h4>cd TDP004</h4><h4>git init</h4> <h4>git remote add origin git@gitlab.ida.liu.se:&lt;liuid&gt;/TDP004</h4>
+      <h3>3:</h3> <h4>git pull origin master</h4>
+      säger till att du vill ha det som finns i <i>origin</i>, till din <i>master</i>-branch.
+      <h3>4:</h3>
+      <h4>mkdir -p lab2/documentation</h4>
+      se 2.1.1
+      <h3>5:</h3>
+      <h4>mkdir lab1</h4>
+      Git sparar inte mappar explicit, utan bara om de innehåller något, men skapar inte konflikt mellan mappar, bara filer.
+      <h4>touch lab1.cc</h4>
+      <h3>6:</h3>
+      <h4>touch lab2.cc lab2.h</h4> skapar både filen <i>lab2.cc</i> och filen <i>lab2.h</i>
+      <h3>7:</h3>
+      <h4>mv lab2* ../lab2</h4>
+      Betyder flytta alla filer som heter något med <i>lab2</i> i mappen <i>lab1</i>till en mapp som heter <i>lab2</i> som ligger på samma nivå som den nuvarande mappen.
+      <h3>8:</h3>
+      <b>cd ..</b> för att komma upp ett steg i filsystemet. <b>vim README.md</b> för att öppna <i>README.md</i> i Vim, <mark>o</mark> för att börja skriva på en ny rad, <mark>esc</mark> för att ta mig ur <mark>insertmode</mark>, <mark>:wq</mark> för att spara och stänga dokumentet.
+      <h3>9:</h3>
+      <h4>touch junk.temp</h4>
+      <h3>10:</h3>
+      <h4>vim .gitignore</h4> <mark>i</mark> för att ta mig in i <i>inputmode</i>, skriv <i>*.~</i> på första raden, och <i/>*.temp"</i> på nästa, sen <mark>esc</mark> och <mark>:wq</mark> för att spara och stänga filen
+      <h3>11:</h3>
+      <h4>git add .</h4> <h4>git commit -m 'First commit from remote'</h4> <h4>git push</h4>
+      <h3>12:</h3>
+      <b>exit</b> för att ta dig ur ssh-sessionen.
+    </div>
+    <div class="inlägg" id="sl3">
+      <h1>2.3:</h1>
+      <h3>1:</h3>
+      <h4>vim README.md</h4>
+      skriv något, spara och stäng.
+      <h3>2:</h3>
+      <h4>git pull</h4>
+      merge error
+      <h4>git add .<br> git commit -m 'Pre merge commit'</h4>. Öppna filen, så ser man <i>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</i> följt av det som vi skrev i <a href="#sl1" id="inlinelink">2.1</a>,
+      följt av <i>=======</i> och det som vi skrev i <a href="#sl2" id="inlinelink">2.2.8</a>, och sist <i>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master</i>. Jag väljer att ta det som kommer från <i>origin/master</i>,
+      så jag tar bort <i>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</i>, det som står emellan här,<i>=======</i> och <i>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master</i> raden.
+      <h4>git add . <br> git commit -m 'Merge resolved' <br> git push</h4>
+    </div>
+    <div class="inlägg" id="sl4">
+      <h1>2.4:</h1>
+      <h3>1:</h3>
+      <b>touch test.py</b> i <i>TDP004</i>, skriv något kort program, se till att <mark>#! /usr/bin/env python3</mark> så att filen kan köras. I terminalen skriv <b>chmod u+x test.py</b> för att få körrättighheter på filen, pröva med <b>./test.py</b>
+      <h3>2:</h3>
+      <h4>echo  "#Detta är en kommentar som skapats med echo" >> test.py</h4>
+      <b>&gt;&gt;</b> skriver till slutet av filen istället för att skriva över den.
+      <h3>3:</h3>
+      <h4>cp -r lab2 lab3</h4>
+       kopiera, rekursivt, mappen lab2, döp om den till lab3, och lägg den i samma mapp som lab2 ligger i.
+      <h3>4:</h3>
+      <h4>cd lab3 <br> mv lab2.cc lab3.cc <br> mv lab2.h lab3.h</h4>
+      Döper om filen <i>lab2.cc</i> till <i>lab3.cc</i> och <i>lab2.h</i> till <i>lab3.h</h>
+      <h3>5:</h3>
+      <h4>scp -r &lt;liuid&gt;@remote-und.ida.liu.se:TDP004/lab1 lab4 <br>cd lab4 <br> mv lab1.cc lab4.cc</h4>
+      Kopierar mappen <i>lab1</i> som ligger på en ssh-server, till den lokala maskinen, går in i mappen, och döper om <i>lab1.cc</i> till <i>lab4.cc</i>
+    </div>
+    <div class="inlägg" id="sl5">
+      <h1>2.5:</h1>
+      <h3>1:</h3>
+      <h4>cd ~ <br> sudo apt-get install tree<br> tree TDP004 >> TDP004/README.md</h4>
+      Gå upp till <i>Hem</i>-katalogen, installera ett program som heter <b>tree</b>, och använd det för att skriva ut strukturen, som ett träd, för <i>TDP004</i> till <i>README.md</i>.
+    </div>
+    <div class="inlägg" id="sl6">
+      <h1>2.6:</h1>
+      <h3>1:</h3>
+      <h4>find -type f -executable</h4>
+      Se <a href="index.html#inl3" id="inlinelink">Uppgift 3</a> för mer info om <b>2.6.1</b> och <b>2.6.2</b>.
+      <h3>2:</h3>
+      <h4>find -type f -executable -exec grep -l "#! /usr/bin/env python3" {} \;</h4>
+      <h3>3:</h3>
+      <h4>cat * .* | grep "^#"</h4>
+      Första delen säger alla vanliga filer, och alla "gömda" filer där namnet börjar med <mark>.</mark>. Andra delen säger att vi vill skriva ut alla rader som börjar med <mark>#</mark>
+    </div>
+  </div>
+</body>
+</html>
